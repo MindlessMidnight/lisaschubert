@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- TEST -->
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
@@ -13,342 +12,177 @@
     .placeholder-img span { font-size: 0.72rem; color: #8e8a82; font-family: monospace; }
   </style>
 </head>
+
 <body class="text-[#1C1F3B] min-h-screen overflow-x-hidden">
 
-  <nav class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-10 py-5 bg-[#FAF5E8]/90 backdrop-blur-md border-b border-[#1C1F3B]/5">
-    <a href="index.html" style="font-family:'Newsreader',serif; font-weight:400;" class="text-lg text-[#1C1F3B]">Lisa Schubert</a>
-    <div class="hidden md:flex items-center gap-10">
-      <a class="text-[#555870] hover:text-[#1C1F3B] transition-colors text-sm" href="index.html#work">Work</a>
-      <a class="text-[#555870] hover:text-[#1C1F3B] transition-colors text-sm" href="index.html#about">About</a>
-      <a href="index.html#contact" class="bg-[#1C1F3B] text-[#FAF5E8] px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#5580ED] transition-colors">Contact</a>
-    </div>
-  </nav>
+<div class="max-w-4xl mx-auto px-10 pt-36 pb-24">
 
-  <div class="max-w-4xl mx-auto px-10 pt-36 pb-12">
-    <a href="index.html" class="inline-flex items-center gap-2 text-[#555870] text-sm mb-8 hover:text-[#1C1F3B] transition-colors">← Alle Projekte</a>
-    <p class="text-[#5580ED] text-sm font-semibold tracking-wide uppercase mb-3">UX Research · Product Design · Bootcamp</p>
-    <h1 class="text-[#1C1F3B] mb-6" style="font-family:'Newsreader',serif; font-weight:500; font-size:clamp(2rem,4vw,3.5rem); line-height:1.1;">Buddy First: Wie aus Hobby-Vernetzung echte Verbindung wächst</h1>
-    <p class="text-[#555870] text-base leading-relaxed max-w-2xl mb-8" style="font-weight:300;">Eine vollständige UX Case Study über 5 Monate: von der ersten Nutzerrecherche über Problem-Reframing und Wireframes bis zu Usability Tests mit echten Nutzenden. Das Projekt zeigt meinen gesamten UX-Prozess: Research, Synthese, Konzeption, Testing.</p>
-    <div class="flex flex-wrap gap-6 border-t border-[#1C1F3B]/8 pt-6">
-      <div><p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Kontext</p><p class="text-sm text-[#555870]">Digitale Leute School Bootcamp</p></div>
-      <div><p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Zeitraum</p><p class="text-sm text-[#555870]">2025, 5 Monate</p></div>
-      <div><p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Rolle</p><p class="text-sm text-[#555870]">UX Research, Konzeption, Wireframing, Usability Testing</p></div>
-      <div><p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Tools</p><p class="text-sm text-[#555870]">Figma, Miro, Umfragen</p></div>
-    </div>
-  </div>
+<!-- HERO -->
+<h1 style="font-family:'Newsreader',serif; font-size:clamp(2rem,4vw,3.5rem); line-height:1.1;" class="mb-6">
+From matching to meaningful connections
+</h1>
 
-  <div class="max-w-4xl mx-auto px-10 pb-24">
+<p class="text-[#555870] text-base leading-relaxed max-w-2xl mb-10">
+Many platforms help people find others. Few help them actually meet.  
+This project explores how reducing uncertainty and lowering the first step can turn matches into real connections.
+</p>
 
-    <!-- Hero Bild -->
-    <div class="rounded-xl overflow-hidden mb-12">
-      <img src="buddy-first-01.jpg" alt="Buddy First Research" class="w-full h-auto"/>
-    </div>
+<!-- HERO IMAGE -->
+<div class="rounded-xl overflow-hidden mb-12">
+  <img src="buddy-first-01.jpg" alt="Buddy First overview" class="w-full h-auto"/>
+</div>
 
-    <!-- 1. Ausgangsfrage -->
-    <div class="mb-12">
-      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">Die Ausgangsfrage</p>
-      <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Wie können Menschen sich über gemeinsame Hobbys vernetzen?</h2>
-      <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">Das Projekt begann mit einer breiten Frage. Ich wählte einen gemischten Research-Ansatz: qualitative Tiefeninterviews für persönliche Einblicke und eine quantitative Umfrage für Muster auf breiter Basis.</p>
-    </div>
+<!-- PROBLEM -->
+<h2 class="text-2xl mb-4" style="font-family:'Newsreader',serif;">
+Why do connections fail?
+</h2>
 
-    <!-- 2. Research Zahlen -->
-    <div class="mb-8">
-      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">Research</p>
-      <h2 class="text-[#1C1F3B] text-2xl mb-6" style="font-family:'Newsreader',serif; font-weight:500;">3 Interviews. 21 Umfrage-Teilnehmende. Klare Muster.</h2>
-      <div class="grid grid-cols-3 gap-4 mb-8">
-        <div class="bg-white border border-[#1C1F3B]/10 rounded-xl p-5 text-center">
-          <p class="text-3xl font-bold text-[#1C1F3B] mb-1">61,9%</p>
-          <p class="text-sm text-[#555870]" style="font-weight:300;">nennen Unsicherheit als größte Hürde beim Knüpfen neuer Kontakte</p>
-        </div>
-        <div class="bg-white border border-[#1C1F3B]/10 rounded-xl p-5 text-center">
-          <p class="text-3xl font-bold text-[#1C1F3B] mb-1">57%</p>
-          <p class="text-sm text-[#555870]" style="font-weight:300;">finden Gleichgesinnte über Freunde, nicht über Apps</p>
-        </div>
-        <div class="bg-white border border-[#1C1F3B]/10 rounded-xl p-5 text-center">
-          <p class="text-3xl font-bold text-[#1C1F3B] mb-1">57,1%</p>
-          <p class="text-sm text-[#555870]" style="font-weight:300;">üben ihr Hobby mehrmals pro Woche aus</p>
-        </div>
-      </div>
-      <p class="text-[#555870] text-base leading-relaxed mb-4" style="font-weight:300;">Zwei Zitate aus den Interviews die den Kern des Problems zeigen:</p>
-      <div class="space-y-4 mb-6">
-        <div style="background:#FEF9C3; border-left:4px solid #5580ED; border-radius:0 12px 12px 0; padding:1.2rem 1.5rem;">
-          <p class="text-[#1C1F3B] text-base italic">"Meine Horrorvorstellung ist, dass alle schon miteinander reden und ich alleine dastehe."</p>
-        </div>
-        <div style="background:#FEF9C3; border-left:4px solid #5580ED; border-radius:0 12px 12px 0; padding:1.2rem 1.5rem;">
-          <p class="text-[#1C1F3B] text-base italic">"Ich habe einfach nicht viel Zeit, dann muss sich das auch wirklich lohnen."</p>
-        </div>
-      </div>
-    </div>
+<p class="text-[#555870] mb-6">
+I started by exploring how people connect through shared hobbies.  
+Research revealed a different problem. The challenge is not finding people. It is taking the first step.
+</p>
 
-    <!-- Tiefere Erkenntnisse -->
-    <div class="mb-12">
-      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">Zentrale Erkenntnisse</p>
-      <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Was die Research wirklich zeigte.</h2>
-      <p class="text-[#555870] text-base leading-relaxed mb-6" style="font-weight:300;">Durch Affinity Mapping der Interviews und Umfrage-Antworten kristallisierten sich vier Muster heraus, die ich so nicht erwartet hatte:</p>
-      <div class="grid grid-cols-2 gap-4">
-        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
-          <p class="text-sm font-semibold text-[#1C1F3B] mb-2">Matching nach Hobby reicht nicht</p>
-          <p class="text-sm text-[#555870] leading-relaxed" style="font-weight:300;">Lebensphase, Verbindlichkeit und Motivation sind entscheidend. Tom braucht jemanden mit ähnlichem Niveau und Verlässlichkeit. Sarah braucht jemanden mit ähnlicher Zeitverfügbarkeit. "Spielt auch Klavier" ist zu wenig.</p>
-        </div>
-        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
-          <p class="text-sm font-semibold text-[#1C1F3B] mb-2">Einseitige Initiative killt Gruppen</p>
-          <p class="text-sm text-[#555870] leading-relaxed" style="font-weight:300;">Wenn immer dieselbe Person organisiert und andere nur konsumieren, schläft die Gruppe ein. Gegenseitige Initiative ist eine Grundbedingung für nachhaltige Verbindungen.</p>
-        </div>
-        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
-          <p class="text-sm font-semibold text-[#1C1F3B] mb-2">Wiederholung ist der Kern</p>
-          <p class="text-sm text-[#555870] leading-relaxed" style="font-weight:300;">Einmalige Events reichen nicht. Erst durch Wiederholung mit denselben Menschen entsteht Vertrauen und echte Verbindung. Das bedeutet: der Wiederholungsmechanismus ist kein Nice-to-have, sondern das Kern-Feature.</p>
-        </div>
-        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
-          <p class="text-sm font-semibold text-[#1C1F3B] mb-2">Das Problem davor lösen</p>
-          <p class="text-sm text-[#555870] leading-relaxed" style="font-weight:300;">Gutes Design löst nicht das offensichtliche Problem, sondern das Problem davor. Bevor eine Verbindung entstehen kann, muss der erste Schritt gemacht werden. Und genau da scheitern die meisten.</p>
-        </div>
-      </div>
-    </div>
+<p class="text-[#555870] mb-12">
+Meaningful connections often fail because the step from match to action is too big, unclear, or emotionally risky.
+</p>
 
-    <!-- Platzhalter: Affinity Map -->
-    <div class="placeholder-img mb-12" style="min-height:280px;">
-      <span>📋 Affinity Map / Research Ergebnisse</span>
-      <span>buddy-first-affinity-map.png</span>
-    </div>
+<!-- RESEARCH -->
+<h2 class="text-2xl mb-6" style="font-family:'Newsreader',serif;">
+Research
+</h2>
 
-    <!-- 3. Problem Reframing -->
-    <div class="mb-8">
-      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">Problem Reframing</p>
-      <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Das eigentliche Problem war ein anderes.</h2>
-      <p class="text-[#555870] text-base leading-relaxed mb-6" style="font-weight:300;">Mein Problemraum veränderte sich mehrfach durch die Research. Das war kein Fehler, sondern Teil des Prozesses:</p>
-      <div class="space-y-3 mb-6">
-        <div class="flex gap-4 items-start bg-white border border-[#1C1F3B]/8 rounded-xl p-4">
-          <span class="text-[#1C1F3B]/30 text-sm font-medium min-w-[60px]">Start</span>
-          <p class="text-[#555870] text-sm" style="font-weight:300;">Wie finden Menschen andere mit ähnlichen Hobbys?</p>
-        </div>
-        <div class="flex gap-4 items-start bg-white border border-[#1C1F3B]/8 rounded-xl p-4">
-          <span class="text-[#555870] text-sm font-medium min-w-[60px]">Refram.</span>
-          <p class="text-[#555870] text-sm" style="font-weight:300;">Wie entstehen aus diesen Kontakten nachhaltige Verbindungen?</p>
-        </div>
-        <div class="flex gap-4 items-start bg-[#EEF2FF] border border-[#5580ED]/30 rounded-xl p-4">
-          <span class="text-[#5580ED] text-sm font-semibold min-w-[60px]">Kern</span>
-          <p class="text-[#1C1F3B] text-sm font-medium">Das eigentliche Pre-Problem: Der erste Schritt fehlt. 61,9% nennen Unsicherheit als größte Hürde.</p>
-        </div>
-      </div>
-      <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">HMW-Frage: "Wie können wir Sarah dabei helfen, eine neue Bekanntschaft über ihr Hobby zu initiieren?"</p>
-    </div>
+<div class="grid grid-cols-3 gap-4 mb-10">
 
-    <!-- Bild: Vom Finden zum Verbinden -->
-    <div class="rounded-xl overflow-hidden mb-12">
-      <img src="3.jpg" alt="Vom Finden zum Verbinden" class="w-full h-auto"/>
-    </div>
+<div class="bg-white border border-[#1C1F3B]/10 rounded-xl p-5 text-center">
+<p class="text-3xl font-bold">61.9%</p>
+<p class="text-sm text-[#555870]">feel uncertainty when meeting new people</p>
+</div>
 
-    <!-- 4. Persona -->
-    <div class="mb-12">
-      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">Persona</p>
-      <h2 class="text-[#1C1F3B] text-2xl mb-6" style="font-family:'Newsreader',serif; font-weight:500;">Sarah: die Nutzerin im Mittelpunkt.</h2>
-      <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-6 max-w-lg">
-        <p class="text-base font-semibold text-[#1C1F3B] mb-1">Sarah, 33</p>
-        <p class="text-xs text-[#5580ED] font-medium uppercase tracking-wide mb-3">Data Science Consultant</p>
-        <p class="text-sm text-[#555870] leading-relaxed" style="font-weight:300;">Vor kurzem nach Hamburg gezogen. Sucht neue Kontakte über Hobbys (K-Pop, Escape Rooms, Wandern), fühlt sich in Gruppen schnell unsicher und bevorzugt kleine, wiederkehrende Treffen.</p>
-      </div>
-    </div>
+<div class="bg-white border border-[#1C1F3B]/10 rounded-xl p-5 text-center">
+<p class="text-3xl font-bold">57%</p>
+<p class="text-sm text-[#555870]">meet people through friends instead of apps</p>
+</div>
 
-    <!-- 5. Designentscheidung -->
-    <div class="mb-8">
-      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">Die Designentscheidung</p>
-      <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Nicht die Gefühle verändern. Die Situation.</h2>
-      <p class="text-[#555870] text-base leading-relaxed mb-6" style="font-weight:300;">Aus der Research entstanden zwei Lösungsrichtungen. Die Entscheidung basierte auf einem klaren Prinzip: Menschen ändern ihr Verhalten leichter, wenn die Umstände sich ändern, nicht wenn man sie ermutigt.</p>
-      <div class="grid grid-cols-2 gap-4 mb-6">
-        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
-          <p class="text-sm font-semibold text-[#1C1F3B] mb-2">Option A: Social Assistant</p>
-          <p class="text-sm text-[#555870] leading-relaxed" style="font-weight:300;">Ein KI-Assistent ermutigt Sarah, alleine zu Events zu gehen und dort Leute anzusprechen. Verändert nur die Einstellung, nicht die Situation.</p>
-        </div>
-        <div class="bg-[#EEF2FF] border border-[#5580ED]/30 rounded-xl p-5">
-          <p class="text-sm font-semibold text-[#1C1F3B] mb-2">Option B: Buddy First ✓</p>
-          <p class="text-sm text-[#555870] leading-relaxed" style="font-weight:300;">Ein Matching-System verbindet Sarah vorab mit jemandem, damit sie nicht alleine erscheint. Verändert die Situation, nicht die Person.</p>
-        </div>
-      </div>
-    </div>
+<div class="bg-white border border-[#1C1F3B]/10 rounded-xl p-5 text-center">
+<p class="text-3xl font-bold">57.1%</p>
+<p class="text-sm text-[#555870]">engage in hobbies multiple times per week</p>
+</div>
 
-    <!-- Bilder: Lösungsansätze + Designprinzip -->
-    <div class="grid grid-cols-2 gap-4 mb-12">
-      <img src="4.jpg" alt="Lösungsansätze" class="rounded-xl w-full h-auto"/>
-      <img src="5.jpg" alt="Das Designprinzip" class="rounded-xl w-full h-auto"/>
-    </div>
+</div>
 
-    <!-- 6. Competitor Analyse -->
-    <div class="mb-8">
-      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">Competitor Analyse</p>
-      <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Person-first statt Event-first.</h2>
-      <p class="text-[#555870] text-base leading-relaxed mb-4" style="font-weight:300;">Bestehende Apps wie Meet5 und Meetup sind Event-first: Sarah sucht ein Event, meldet sich an, hofft dass jemand da ist. Buddy First ist Person-first: zuerst eine konkrete Person finden, dann gemeinsam hingehen. Ausserdem zeigte die Analyse klare Dark Patterns bei Meet5:</p>
-      <div class="grid grid-cols-3 gap-3 mb-4">
-        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-4 text-center">
-          <p class="text-2xl mb-2">✗</p>
-          <p class="text-sm text-[#555870]" style="font-weight:300;">FOMO-Druck durch Benachrichtigungen über verpasste Meetups</p>
-        </div>
-        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-4 text-center">
-          <p class="text-2xl mb-2">✗</p>
-          <p class="text-sm text-[#555870]" style="font-weight:300;">Attention Grabbing durch unzählige Push-Benachrichtigungen</p>
-        </div>
-        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-4 text-center">
-          <p class="text-2xl mb-2">✗</p>
-          <p class="text-sm text-[#555870]" style="font-weight:300;">Wichtige Funktionen hinter teurer Paywall versteckt</p>
-        </div>
-      </div>
-    </div>
+<!-- INSIGHTS -->
+<h2 class="text-2xl mb-6" style="font-family:'Newsreader',serif;">
+Key insights
+</h2>
 
-    <!-- Bild: Meet5 Analyse -->
-    <div class="rounded-xl overflow-hidden mb-12">
-      <img src="7.jpg" alt="Meet5 Competitor Analyse" class="w-full h-auto"/>
-    </div>
+<div class="grid grid-cols-2 gap-4 mb-12">
 
-    <!-- 7. Profilgestaltung und Psychologie -->
-    <div class="mb-12">
-      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">Profilgestaltung</p>
-      <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Psychologie der Sympathie: Wie entsteht Vertrauen in Sekunden?</h2>
-      <p class="text-[#555870] text-base leading-relaxed mb-6" style="font-weight:300;">Eine zentrale Designfrage war: Wie muss ein Profil gestaltet sein, damit Sarah wirklich Lust hat, jemanden anzuschreiben? Ich habe mich psychologisch damit beschäftigt, wie Menschen in Sekunden Sympathieentscheidungen treffen.</p>
-      <div class="grid grid-cols-2 gap-4 mb-6">
-        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
-          <p class="text-sm font-semibold text-[#1C1F3B] mb-2">Wärme vor Kompetenz</p>
-          <p class="text-sm text-[#555870] leading-relaxed" style="font-weight:300;">Sympathie basiert stark auf wahrgenommener Wärme, erst dann auf Kompetenz. Das Profil muss Persönlichkeit und Intention zeigen, bevor es Fähigkeiten kommuniziert.</p>
-        </div>
-        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
-          <p class="text-sm font-semibold text-[#1C1F3B] mb-2">Persönlichkeit zuerst</p>
-          <p class="text-sm text-[#555870] leading-relaxed" style="font-weight:300;">Statt sofort ein Foto zu zeigen, entschied ich mich für einen Icebreaker als ersten Eindruck: z.B. "Ich bouldere seit 6 Monaten und bin endlich bereit, nicht mehr alleine zu gehen." Dann kommt das Foto.</p>
-        </div>
-      </div>
-      <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">Profil-Struktur: Icebreaker Prompt, dann Foto, dann Tags (Life Stage, Time Commitment, Ambition), dann Hobby-Foto. Das unterscheidet Buddy First von Dating-Apps wie Bumble, wo das Foto immer an erster Stelle steht.</p>
-    </div>
+<div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
+<p class="text-sm font-semibold mb-2">The first step is the real barrier</p>
+<p class="text-sm text-[#555870]">
+Users do not struggle to find people. They struggle to act. Uncertainty leads to inaction.
+</p>
+</div>
 
-    <!-- 8. Wireframes -->
-    <div class="mb-8">
-      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">Wireframes</p>
-      <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Von der Idee zum ersten Prototyp.</h2>
-      <p class="text-[#555870] text-base leading-relaxed mb-6" style="font-weight:300;">Der MVP-Flow fokussiert sich auf einen klaren Übergang: Person finden, Kontakt aufnehmen, gemeinsam hingehen. Die Navigation spiegelt das wider mit fünf Bereichen: Connect, Chat, Plans, Waves, Profil.</p>
-    </div>
+<div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
+<p class="text-sm font-semibold mb-2">Small steps drive behaviour</p>
+<p class="text-sm text-[#555870]">
+People are more likely to act when actions are simple and clearly defined. Large steps create friction.
+</p>
+</div>
 
-    <!-- Bild: Wireframes -->
-    <div class="rounded-xl overflow-hidden mb-6">
-      <img src="wireframes_auswahl.png" alt="Wireframes Auswahl" class="w-full h-auto"/>
-    </div>
+<div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
+<p class="text-sm font-semibold mb-2">Emotional safety comes first</p>
+<p class="text-sm text-[#555870]">
+Users need to feel safe before reaching out. Warmth and similarity influence decisions more than competence.
+</p>
+</div>
 
-    <!-- Platzhalter: Figma Prototyp Screenshots -->
-    <div class="grid grid-cols-2 gap-4 mb-6">
-      <div class="placeholder-img" style="min-height:200px;">
-        <span>📱 Figma Prototyp: Profil Screen</span>
-        <span>buddy-first-prototype-profile.png</span>
-      </div>
-      <div class="placeholder-img" style="min-height:200px;">
-        <span>📱 Figma Prototyp: Match Screen</span>
-        <span>buddy-first-prototype-match.png</span>
-      </div>
-    </div>
+<div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
+<p class="text-sm font-semibold mb-2">Clarity beats choice</p>
+<p class="text-sm text-[#555870]">
+Too many options lead to decision avoidance. Users prefer a few clear next steps.
+</p>
+</div>
 
-    <!-- Wartezeit als Design-Problem -->
-    <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5 mb-12">
-      <p class="text-sm font-semibold text-[#1C1F3B] mb-2">Die Wartezeit als Anxiety-Problem</p>
-      <p class="text-sm text-[#555870] leading-relaxed" style="font-weight:300;">Eine offene Frage die ich explizit designen wollte: Was passiert nachdem Sarah eine Wave schickt? Die Wartezeit ist der Moment wo Angst entsteht. "Hat sie es gesehen? Mag sie mich nicht?" Diesen Moment leer zu lassen wäre ein Designfehler. Die Lösung: Sarah kann weiterblättern und die Wartezeit wird produktiv gestaltet statt leer gelassen.</p>
-    </div>
+</div>
 
-    <!-- 9. Usability Testing -->
-    <div class="mb-12">
-      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">Usability Testing</p>
-      <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Annahmen mit echten Nutzenden überprüfen.</h2>
-      <p class="text-[#555870] text-base leading-relaxed mb-6" style="font-weight:300;">Nach den ersten Wireframes führte ich Usability Tests mit einem strukturierten Testskript durch. Das Szenario war nah an der Persona: "Du bist neu in München und möchtest jemanden finden, der auch näht." Zwei zentrale Fragen standen im Mittelpunkt:</p>
-      <div class="grid grid-cols-2 gap-4 mb-6">
-        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
-          <p class="text-sm font-semibold text-[#1C1F3B] mb-2">Profil-Sympathie</p>
-          <p class="text-sm text-[#555870] leading-relaxed" style="font-weight:300;">Macht das Profil Lust, jemanden anzuschreiben? Was war der erste Eindruck? Hat etwas gestört?</p>
-        </div>
-        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
-          <p class="text-sm font-semibold text-[#1C1F3B] mb-2">Match zu Treffen</p>
-          <p class="text-sm text-[#555870] leading-relaxed" style="font-weight:300;">Ist der Übergang vom Match zum konkreten Treffen verständlich? Wo zögern die Testpersonen?</p>
-        </div>
-      </div>
+<!-- TRANSITION -->
+<p class="text-[#555870] mb-12">
+These insights show that the core challenge is not matching users. The challenge is enabling action.
+</p>
 
-      <!-- Platzhalter: Usability Test -->
-      <div class="placeholder-img mb-6" style="min-height:200px;">
-        <span>🧪 Usability Test Dokumentation / Testskript</span>
-        <span>buddy-first-usability-test.png</span>
-      </div>
-    </div>
+<!-- DESIGN DECISION -->
+<h2 class="text-2xl mb-4" style="font-family:'Newsreader',serif;">
+Design decision
+</h2>
 
-    <!-- 10. Ethische Verantwortung -->
-    <div class="mb-12">
-      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">Ethische Verantwortung</p>
-      <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Design mit Haltung.</h2>
-      <div class="grid grid-cols-2 gap-3">
-        <div class="flex gap-3 items-start bg-white border border-[#1C1F3B]/8 rounded-xl p-4">
-          <span class="text-[#5580ED]">✦</span>
-          <div><p class="text-sm font-medium text-[#1C1F3B]">Kein FOMO-Druck</p><p class="text-xs text-[#555870] mt-1" style="font-weight:300;">Keine Benachrichtigungen über verpasste Events</p></div>
-        </div>
-        <div class="flex gap-3 items-start bg-white border border-[#1C1F3B]/8 rounded-xl p-4">
-          <span class="text-[#5580ED]">✦</span>
-          <div><p class="text-sm font-medium text-[#1C1F3B]">Kernfunktionen für alle</p><p class="text-xs text-[#555870] mt-1" style="font-weight:300;">Keine wichtigen Features hinter Paywall</p></div>
-        </div>
-        <div class="flex gap-3 items-start bg-white border border-[#1C1F3B]/8 rounded-xl p-4">
-          <span class="text-[#5580ED]">✦</span>
-          <div><p class="text-sm font-medium text-[#1C1F3B]">Kognitive Barrierefreiheit</p><p class="text-xs text-[#555870] mt-1" style="font-weight:300;">Klare, einfache Sprache und Navigation</p></div>
-        </div>
-        <div class="flex gap-3 items-start bg-white border border-[#1C1F3B]/8 rounded-xl p-4">
-          <span class="text-[#5580ED]">✦</span>
-          <div><p class="text-sm font-medium text-[#1C1F3B]">Bedachte Einladungen</p><p class="text-xs text-[#555870] mt-1" style="font-weight:300;">Keine Spam-Benachrichtigungen</p></div>
-        </div>
-      </div>
-    </div>
+<p class="text-[#555870] mb-10">
+People do not change behaviour because they are encouraged to.  
+They change when the situation makes action easier.
 
-    <!-- 11. Erfolgsmessung -->
-    <div class="mb-12">
-      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">Erfolgsmessung</p>
-      <h2 class="text-[#1C1F3B] text-2xl mb-6" style="font-family:'Newsreader',serif; font-weight:500;">Wie wird der Erfolg messbar?</h2>
-      <div class="grid grid-cols-2 gap-4">
-        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
-          <p class="text-sm font-semibold text-[#1C1F3B] mb-3">Engagement</p>
-          <p class="text-sm text-[#555870] mb-3" style="font-weight:300;">Führt ein Match zu einem gemeinsamen Treffen?</p>
-          <ul class="space-y-1">
-            <li class="text-xs text-[#555870] flex gap-2"><span class="text-[#5580ED]">✦</span>Match und Chat: App Tracking</li>
-            <li class="text-xs text-[#555870] flex gap-2"><span class="text-[#5580ED]">✦</span>In-App Survey "Habt ihr euch getroffen?"</li>
-          </ul>
-        </div>
-        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
-          <p class="text-sm font-semibold text-[#1C1F3B] mb-3">Retention</p>
-          <p class="text-sm text-[#555870] mb-3" style="font-weight:300;">Bleiben Matches in Kontakt oder treffen sich erneut?</p>
-          <ul class="space-y-1">
-            <li class="text-xs text-[#555870] flex gap-2"><span class="text-[#5580ED]">✦</span>In-App Survey "Seid ihr zusammen gegangen?"</li>
-            <li class="text-xs text-[#555870] flex gap-2"><span class="text-[#5580ED]">✦</span>App Tracking bei erneutem Matching</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+Instead of motivating users, the solution reduces the barrier to act.
+</p>
 
-    <!-- Learnings -->
-    <div style="background:#FEF9C3; border:1px solid #5580ED; border-left:4px solid #5580ED; border-radius:0 12px 12px 0; padding:1.5rem; margin-bottom:3rem;">
-      <p style="font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#5580ED; margin:0 0 1rem;">Was ich dabei gelernt habe</p>
-      <div style="display:flex; flex-direction:column; gap:0.75rem;">
-        <div style="display:flex; gap:0.75rem;"><span style="color:#5580ED; font-size:14px;">✦</span><p style="font-size:14px; color:#1C1F3B; margin:0; line-height:1.5; font-weight:300;">UX Research: qualitative Interviews, Surveys und Affinity Mapping durchführen und auswerten</p></div>
-        <div style="display:flex; gap:0.75rem;"><span style="color:#5580ED; font-size:14px;">✦</span><p style="font-size:14px; color:#1C1F3B; margin:0; line-height:1.5; font-weight:300;">Problem Reframing: den Mut haben, die ursprüngliche Frage loszulassen wenn Research etwas anderes zeigt</p></div>
-        <div style="display:flex; gap:0.75rem;"><span style="color:#5580ED; font-size:14px;">✦</span><p style="font-size:14px; color:#1C1F3B; margin:0; line-height:1.5; font-weight:300;">Psychologie im Design: wie Sympathie und Vertrauen entstehen und wie Profilgestaltung das aktiv beeinflussen kann</p></div>
-        <div style="display:flex; gap:0.75rem;"><span style="color:#5580ED; font-size:14px;">✦</span><p style="font-size:14px; color:#1C1F3B; margin:0; line-height:1.5; font-weight:300;">Usability Testing: mit echtem Testskript arbeiten und Annahmen mit Nutzenden überprüfen statt selbst zu entscheiden</p></div>
-        <div style="display:flex; gap:0.75rem;"><span style="color:#5580ED; font-size:14px;">✦</span><p style="font-size:14px; color:#1C1F3B; margin:0; line-height:1.5; font-weight:300;">Ethik im Design: aktiv gegen Dark Patterns entscheiden und diese Haltung im Konzept verankern</p></div>
-      </div>
-    </div>
+<!-- SOLUTION -->
+<h2 class="text-2xl mb-6" style="font-family:'Newsreader',serif;">
+Solution concept
+</h2>
 
-    <!-- Next projects -->
-    <div class="border-t border-[#1C1F3B]/8 pt-8">
-      <p class="text-[#555870] text-xs font-semibold tracking-wide uppercase mb-5">Weitere Projekte</p>
-      <div class="grid grid-cols-2 gap-4">
-        <a href="feature-design.html" class="bg-white border border-[#1C1F3B]/8 rounded-xl p-4 flex items-center gap-3 hover:shadow-md transition-all">
-          <img src="feature-design-01.png" class="w-16 h-12 object-cover rounded-lg flex-shrink-0"/>
-          <div><p class="text-[#5580ED] text-xs uppercase tracking-wide font-medium mb-1">Feature Design</p><p class="text-[#1C1F3B] text-sm" style="font-family:'Newsreader',serif;">Rewards Feature: Team App</p></div>
-        </a>
-        <a href="wim-frida.html" class="bg-white border border-[#1C1F3B]/8 rounded-xl p-4 flex items-center gap-3 hover:shadow-md transition-all">
-          <img src="wim-frida-01.jpg" class="w-16 h-12 object-cover rounded-lg flex-shrink-0"/>
-          <div><p class="text-[#5580ED] text-xs uppercase tracking-wide font-medium mb-1">Illustration</p><p class="text-[#1C1F3B] text-sm" style="font-family:'Newsreader',serif;">Wim &amp; Frida Räbeliechtli</p></div>
-        </a>
-      </div>
-    </div>
+<div class="grid grid-cols-2 gap-4 mb-10">
 
-  </div>
+<div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
+<p class="text-sm font-semibold mb-2">Option A</p>
+<p class="text-sm text-[#555870]">
+An assistant encourages users to attend events alone. This approach focuses on changing mindset.
+</p>
+</div>
 
-  <footer class="bg-[#1C1F3B] border-t border-[#FAF5E8]/10 py-6 text-center text-[#FAF5E8]/30 text-xs">
-    © 2025 Lisa Schubert · UX Designerin &amp; Illustratorin
-  </footer>
+<div class="bg-[#EEF2FF] border border-[#5580ED]/30 rounded-xl p-5">
+<p class="text-sm font-semibold mb-2">Option B: Buddy First</p>
+<p class="text-sm text-[#555870]">
+Users are matched before attending. This removes the uncertainty of arriving alone and changes the situation itself.
+</p>
+</div>
+
+</div>
+
+<!-- WIREFRAMES -->
+<h2 class="text-2xl mb-6" style="font-family:'Newsreader',serif;">
+Wireframes
+</h2>
+
+<p class="text-[#555870] mb-6">
+The core flow focuses on one transition. Find a person. Start contact. Meet together.
+</p>
+
+<div class="rounded-xl overflow-hidden mb-12">
+  <img src="wireframes_auswahl.png" alt="Wireframes" class="w-full h-auto"/>
+</div>
+
+<!-- USABILITY -->
+<h2 class="text-2xl mb-6" style="font-family:'Newsreader',serif;">
+Usability testing
+</h2>
+
+<p class="text-[#555870] mb-10">
+I tested the concept with users to understand whether profiles feel approachable and whether the transition from match to meeting is clear.
+</p>
+
+<!-- LEARNINGS -->
+<h2 class="text-2xl mb-6" style="font-family:'Newsreader',serif;">
+What I learned
+</h2>
+
+<ul class="text-[#555870] space-y-2">
+<li>Turning research into clear product decisions</li>
+<li>Reframing problems based on evidence</li>
+<li>Designing for behaviour instead of features</li>
+<li>Validating ideas through user testing</li>
+<li>Making conscious ethical design decisions</li>
+</ul>
+
+</div>
 
 </body>
 </html>
