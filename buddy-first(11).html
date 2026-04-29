@@ -72,13 +72,13 @@
 
     /* ── Split layout: 75% image, 25% text, top-aligned ── */
     .split-section { margin-bottom:2.5rem; }
-    .split-section-label { font-size:0.7rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#5580ED; margin-bottom:0.5rem; }
+    .split-section-label { font-size:0.7rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#5580ED; margin-bottom:0; }
     .split-layout { display:grid; gap:1.75rem; align-items:start; margin-top:0; }
     .split-img-left  { grid-template-columns:75fr 25fr; }
     .split-img-right { grid-template-columns:25fr 75fr; }
     .split-layout .split-text { display:flex; flex-direction:column; padding-top:0; }
-    .split-layout .split-text h2 { font-family:'Newsreader',serif; font-weight:500; font-size:1.2rem; line-height:1.35; color:#1C1F3B; margin-bottom:0.5rem; margin-top:0; }
-    .split-layout .split-text p { font-size:1rem; color:#555870; font-weight:300; line-height:1.7; }
+    .split-layout .split-text h2 { font-family:'Newsreader',serif; font-weight:500; font-size:1.15rem; line-height:1.35; color:#1C1F3B; margin-bottom:0.5rem; margin-top:0; }
+    .split-layout .split-text p { font-size:0.85rem; color:#555870; font-weight:300; line-height:1.6; }
     .split-layout img { width:100%; border-radius:0.75rem; height:auto; display:block; }
 
     /* ── Header meta ── */
@@ -87,9 +87,9 @@
     .header-meta-item:last-child { padding-right:0; border-right:none; margin-right:0; }
 
     /* ── Shared text classes ── */
-    .section-label { font-size:0.7rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#5580ED; margin-bottom:0.75rem; }
-    .section-h2 { font-family:'Newsreader',serif; font-weight:500; font-size:1.6rem; line-height:1.25; color:#1C1F3B; margin-bottom:0.25rem; }
-    .section-body { font-size:1rem; color:#555870; font-weight:300; line-height:1.75; }
+    .section-label { font-size:0.7rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#5580ED; margin-bottom:0.4rem; }
+    .section-h2 { font-family:'Newsreader',serif; font-weight:500; font-size:1.4rem; line-height:1.25; color:#1C1F3B; margin-bottom:0.6rem; }
+    .section-body { font-size:0.9rem; color:#555870; font-weight:300; line-height:1.7; }
 
     @media(max-width:768px){
       .page-layout { grid-template-columns:1fr; }
@@ -120,7 +120,7 @@
     <a href="index.html" class="inline-flex items-center gap-2 text-[#555870] text-sm mb-8 hover:text-[#1C1F3B] transition-colors">← All Projects</a>
     <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">UX Research &nbsp;·&nbsp; Product Design &nbsp;·&nbsp; Bootcamp</p>
     <h1 class="text-[#1C1F3B] mb-3" style="font-family:'Newsreader',serif; font-weight:500; font-size:clamp(2rem,4vw,3.2rem); line-height:1.15;">Buddy First: How hobby connections grow into real relationships</h1>
-    <p class="text-[#555870] leading-relaxed max-w-xl mb-8" style="font-weight:300; font-size:1rem;">A 4-month UX case study exploring why social interactions often fail to turn into real connections, and how design can close that gap.</p>
+    <p class="text-[#555870] text-sm leading-relaxed max-w-xl mb-8" style="font-weight:300;">A 4-month UX case study exploring why social interactions often fail to turn into real connections, and how design can close that gap.</p>
     <div class="header-meta">
       <div class="header-meta-item"><p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Context</p><p class="text-sm text-[#555870]">Digitale Leute School Bootcamp</p></div>
       <div class="header-meta-item"><p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Timeline</p><p class="text-sm text-[#555870]">2026, 4 months</p></div>
@@ -150,14 +150,9 @@
 
     <!-- 1. INTRO -->
     <div class="section" id="context">
-      <p class="section-label">Why this problem matters</p>
-      <h2 class="section-h2">People want connection more than ever, yet struggle to actually build it.</h2>
-      <p class="section-body" style="margin-bottom:0.75rem;">In recent years, loneliness has been increasingly recognised as a societal issue, not because people are alone, but because meaningful, consistent connections are missing. Studies highlight a growing experience of "social thinning": people have acquaintances, but lack regular shared experiences.</p>
-      <p class="section-body" style="margin-bottom:0.75rem;">At the same time, platforms like Meetup show a clear trend: people actively seek connection through shared hobbies and group activities, especially between the ages of 25 and 35, when social structures like university or school naturally fade.</p>
-      <div class="highlight">
-        <p class="text-[#1C1F3B]" style="font-weight:500; font-size:1rem;">People don't avoid events because they don't want to go. They avoid them because they don't want to go alone.</p>
-      </div>
-      <p class="section-body" style="margin-top:0.75rem;">This led me to explore a key question: why do so many social interactions never turn into real, lasting connections? I was particularly interested in the moment where intention turns into action, because that is where most connections seem to fail.</p>
+      <p class="section-label">Context</p>
+      <h2 class="section-h2">People want connection. But often don't act on it.</h2>
+      <p class="section-body">In recent years, loneliness has increasingly been recognised as a societal issue, not because people are alone, but because meaningful, real-world connections are harder to build. After phases like university or school, social structures fade. This creates a paradox: people want connection, but often don't take the first step.</p>
     </div>
 
     <!-- 2. RESEARCH -->
@@ -193,23 +188,23 @@
     <div class="section" id="insights">
       <p class="section-label">Key Insights</p>
       <h2 class="section-h2">Finding people is not enough.</h2>
-      <p class="section-body" style="margin-bottom:1.25rem;">Users struggle to find the right person <em>and</em> to take the first step. Three layers emerged:</p>
-      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:2.5rem; border-top:1px solid rgba(28,31,59,0.08); padding-top:1.25rem;">
-        <div>
-          <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#5580ED; margin-bottom:0.5rem;">Discovery problem</p>
-          <p class="section-body">Users want more than a shared hobby. Life stage, commitment, and motivation determine whether connections actually form.</p>
+      <p class="section-body" style="margin-bottom:1rem;">Users struggle to find the right person <em>and</em> to take the first step. Three layers emerged:</p>
+      <div style="display:flex; flex-direction:column; gap:0.5rem;">
+        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-4">
+          <p class="text-sm font-semibold text-[#1C1F3B] mb-1">Discovery problem</p>
+          <p class="section-body" style="font-size:0.85rem;">Users want more than a shared hobby. Life stage, commitment, and motivation determine whether connections actually form.</p>
         </div>
-        <div>
-          <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#5580ED; margin-bottom:0.5rem;">Behavioural problem</p>
-          <p class="section-body">Even with a good match, users hesitate. Unclear next steps and fear of awkwardness lead to inaction. One-sided initiative kills groups.</p>
+        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-4">
+          <p class="text-sm font-semibold text-[#1C1F3B] mb-1">Behavioural problem</p>
+          <p class="section-body" style="font-size:0.85rem;">Even with a good match, users hesitate. Unclear next steps and fear of awkwardness lead to inaction. One-sided initiative kills groups.</p>
         </div>
-        <div>
-          <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#5580ED; margin-bottom:0.5rem;">Core insight</p>
-          <p class="section-body">The gap between finding someone and actually meeting them is where connections fail. Repetition builds trust, not one-off meetings.</p>
+        <div style="background:#EEF2FF; border:0.5px solid rgba(85,128,237,0.3); border-radius:10px; padding:1rem;">
+          <p class="text-sm font-semibold text-[#1C1F3B] mb-1">Core insight</p>
+          <p class="section-body" style="font-size:0.85rem;">The gap between finding someone and actually meeting them is where connections fail. Repetition builds trust, not one-off meetings.</p>
         </div>
       </div>
       <div class="highlight">
-        <p class="text-[#1C1F3B]" style="font-weight:500; font-size:1rem;">People don't avoid connection. They avoid the uncertainty of the first step.</p>
+        <p class="text-[#1C1F3B] text-sm" style="font-weight:500;">People don't avoid connection. They avoid the uncertainty of the first step.</p>
       </div>
     </div>
 
@@ -217,18 +212,18 @@
     <div class="section" id="persona">
       <p class="section-label">Persona</p>
       <h2 class="section-h2">Sarah: the user at the centre.</h2>
-      <div style="display:grid; grid-template-columns:210px 1fr; gap:0; align-items:start; margin-top:1rem; border-top:1px solid rgba(28,31,59,0.08); padding-top:1rem;">
-        <div style="padding-right:2rem; border-right:1px solid rgba(28,31,59,0.08);">
-          <p style="font-size:0.9rem; font-weight:600; color:#1C1F3B; margin-bottom:0.2rem;">Sarah, 33</p>
-          <p style="font-size:0.75rem; color:#5580ED; font-weight:500; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">Data Science Consultant,<br/>recently moved to Hamburg</p>
-          <p class="section-body" style="font-size:0.85rem;">K-Pop, Escape Rooms, Hiking. Not shy. She just needs the situation to feel safe before she takes the first step.</p>
+      <div class="persona-layout">
+        <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5" style="width:210px; flex-shrink:0;">
+          <p class="text-sm font-semibold text-[#1C1F3B] mb-1">Sarah, 33</p>
+          <p style="font-size:0.7rem;" class="text-[#5580ED] font-medium uppercase tracking-wide mb-3">Data Science Consultant,<br/>recently moved to Hamburg</p>
+          <p class="section-body" style="font-size:0.82rem;">K-Pop, Escape Rooms, Hiking. Not shy — she just needs the situation to feel safe before she takes the first step.</p>
         </div>
-        <div style="padding-left:2rem;">
-          <p class="section-body">Sarah is 33, recently moved to Hamburg, and looks for activities and events. She wants to meet new people but feels unsure in unfamiliar group situations. She is not isolated. She simply lacks shared experiences.</p>
+        <div>
+          <p class="section-body">Sarah is 33, recently moved to Hamburg, and looks for activities and events. She wants to meet new people but feels unsure in unfamiliar group situations. She is not isolated — she simply lacks shared experiences.</p>
           <p class="section-body" style="margin-top:0.75rem;"><span class="font-semibold text-[#1C1F3B]">The Critical Moment:</span> Sarah comes home after work. She sees an event she would enjoy but doesn't go. Not because she isn't interested, but because she doesn't want to go alone.</p>
+          <img src="bf_a_centralmoment.png" alt="The critical moment" class="img-md" style="max-width:100%;"/>
         </div>
       </div>
-      <img src="bf_a_centralmoment.png" alt="The critical moment" class="img-md" style="margin-top:2.5rem;"/>
     </div>
 
     </div><!-- end discover -->
@@ -262,37 +257,40 @@
     <div class="section" id="core-insight">
       <p class="section-label">From Insight to Decision</p>
       <h2 class="section-h2">How research shaped the product.</h2>
-      <div style="margin-top:1.25rem; border-top:1px solid rgba(28,31,59,0.08);">
-        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0; padding:0.6rem 0; border-bottom:1px solid rgba(28,31,59,0.08);">
-          <p style="font-size:0.7rem; font-weight:700; color:#5580ED; text-transform:uppercase; letter-spacing:0.07em; padding-right:4rem;">Insight</p>
-          <p style="font-size:0.7rem; font-weight:700; color:#5580ED; text-transform:uppercase; letter-spacing:0.07em; padding-right:4rem;">What it means</p>
-          <p style="font-size:0.7rem; font-weight:700; color:#5580ED; text-transform:uppercase; letter-spacing:0.07em;">Decision</p>
+      <div class="insight-cards">
+        <div class="insight-card">
+          <div class="insight-card-grid">
+            <div><p class="insight-col-label">Insight</p><p class="insight-col-text">Users struggle to initiate interaction, not only to find people.</p></div>
+            <div><p class="insight-col-label">What it means</p><p class="insight-col-text">The barrier is not discovery, but the first step.</p></div>
+            <div><p class="insight-col-label">Decision</p><p class="insight-col-text decision">Design a system that reduces the risk of the first interaction by matching users before they attend an activity.</p></div>
+          </div>
         </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; padding:1rem 0; border-bottom:1px solid rgba(28,31,59,0.06);">
-          <p class="section-body" style="padding-right:4rem;">Users struggle to initiate interaction, not only to find people.</p>
-          <p class="section-body" style="padding-right:4rem;">The barrier is not discovery, but the first step.</p>
-          <p class="section-body">Design a system that reduces the risk of the first interaction by matching users before they attend an activity.</p>
+        <div class="insight-card">
+          <div class="insight-card-grid">
+            <div><p class="insight-col-label">Insight</p><p class="insight-col-text">Shared hobbies alone do not create meaningful matches.</p></div>
+            <div><p class="insight-col-label">What it means</p><p class="insight-col-text">Matching must consider context: time, motivation, and life situation.</p></div>
+            <div><p class="insight-col-label">Decision</p><p class="insight-col-text decision">Introduce profile elements that communicate intent, availability, and expectations, not just interests.</p></div>
+          </div>
         </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; padding:1rem 0; border-bottom:1px solid rgba(28,31,59,0.06);">
-          <p class="section-body" style="padding-right:4rem;">Shared hobbies alone do not create meaningful matches.</p>
-          <p class="section-body" style="padding-right:4rem;">Matching must consider context: time, motivation, and life situation.</p>
-          <p class="section-body">Introduce profile elements that communicate intent, availability, and expectations, not just interests.</p>
+        <div class="insight-card">
+          <div class="insight-card-grid">
+            <div><p class="insight-col-label">Insight</p><p class="insight-col-text">Users are not ready to go alone to big meetups.</p></div>
+            <div><p class="insight-col-label">What it means</p><p class="insight-col-text">Trust and comfort need to build before committing to real-life interaction.</p></div>
+            <div><p class="insight-col-label">Decision</p><p class="insight-col-text decision">Allow lightweight interaction (signals, small messages) before suggesting a meetup.</p></div>
+          </div>
         </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; padding:1rem 0; border-bottom:1px solid rgba(28,31,59,0.06);">
-          <p class="section-body" style="padding-right:4rem;">Users are not ready to go alone to big meetups.</p>
-          <p class="section-body" style="padding-right:4rem;">Trust and comfort need to build before committing to real-life interaction.</p>
-          <p class="section-body">Allow lightweight interaction (signals, small messages) before suggesting a meetup.</p>
-        </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; padding:1rem 0; border-bottom:1px solid rgba(28,31,59,0.06);">
-          <p class="section-body" style="padding-right:4rem;">One-sided initiative leads to inactive groups.</p>
-          <p class="section-body" style="padding-right:4rem;">Sustainable interaction requires mutual engagement.</p>
-          <p class="section-body">Design features that encourage reciprocal interaction rather than passive consumption.</p>
+        <div class="insight-card">
+          <div class="insight-card-grid">
+            <div><p class="insight-col-label">Insight</p><p class="insight-col-text">One-sided initiative leads to inactive groups.</p></div>
+            <div><p class="insight-col-label">What it means</p><p class="insight-col-text">Sustainable interaction requires mutual engagement.</p></div>
+            <div><p class="insight-col-label">Decision</p><p class="insight-col-text decision">Design features that encourage reciprocal interaction rather than passive consumption.</p></div>
+          </div>
         </div>
       </div>
       <div class="highlight">
         <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Opportunity</p>
         <p class="text-[#1C1F3B] text-sm" style="font-weight:500;">What if we reduce the barrier of the first step?</p>
-        <p class="section-body" style="margin-top:0.35rem; font-size:0.85rem;">Instead of asking users to join groups or approach strangers, we can create smaller, more manageable interactions. The goal is not to design a better event platform. It is to design a better first step.</p>
+        <p class="section-body" style="margin-top:0.35rem; font-size:0.85rem;">Instead of asking users to join groups or approach strangers, we can create smaller, more manageable interactions. The goal is not to design a better event platform — it is to design a better first step.</p>
       </div>
     </div>
 
@@ -301,25 +299,25 @@
     <!-- PHASE 3: DESIGN -->
     <div id="design" class="phase-block">
 
-    <!-- SOLUTION -->
+    <!-- 9. SOLUTION -->
     <div class="section split-section" id="solution">
+      <p class="split-section-label">The Solution</p>
       <div class="split-layout split-img-left">
         <img src="bf_a_solutions.png" alt="Two approaches"/>
-        <div class="split-text" style="padding-top:0;">
-          <p class="split-section-label" style="margin-bottom:0.5rem;">The Solution</p>
-          <h2 style="margin-top:0;">Buddy First instead of Event First.</h2>
-          <p style="margin-top:0.75rem;">Most non-dating platforms are event-first: sign up and hope someone will be there. Buddy First flips this. Meet one person first, then go together.</p>
+        <div class="split-text">
+          <h2>Buddy-first instead of event-first.</h2>
+          <p>Most non-dating platforms are event-first: sign up and hope someone will be there. Buddy First flips this. Meet one person first, then go together.</p>
         </div>
       </div>
     </div>
 
-    <!-- DESIGN PRINCIPLE -->
+    <!-- 10. DESIGN PRINCIPLE -->
     <div class="section split-section" id="principle">
+      <p class="split-section-label">Design Principle</p>
       <div class="split-layout split-img-right">
-        <div class="split-text" style="padding-top:0;">
-          <p class="split-section-label" style="margin-bottom:0.5rem;">Design Principle</p>
-          <h2 style="margin-top:0;">Break large social steps into smaller, manageable actions.</h2>
-          <p style="margin-top:0.75rem;">Smaller steps reduce uncertainty. Clarity increases action. People change behaviour more readily when the situation changes, not when they're asked to act differently.</p>
+        <div class="split-text">
+          <h2>Break large social steps into smaller, manageable actions.</h2>
+          <p>Smaller steps reduce uncertainty. Clarity increases action. People change behaviour more readily when the situation changes, not when they're asked to act differently.</p>
         </div>
         <img src="bf_a_principle.png" alt="Design principle"/>
       </div>
@@ -347,25 +345,11 @@
     </div>
 
     <!-- PROFILE DESIGN -->
-    <div class="section split-section" id="profile">
-      <div class="split-layout split-img-right">
-        <div class="split-text" style="padding-top:0;">
-          <p class="split-section-label">Profile Design</p>
-          <h2>Warmth before competence.</h2>
-          <p style="margin-top:0.75rem;">Research on instant likability (thin slicing) shows that warmth is assessed before competence. I structured the profile accordingly: icebreaker prompt first, then photo, then tags for life stage, commitment, and ambition. A deliberate departure from dating apps like Bumble, where the photo always comes first.</p>
-        </div>
-        <img src="bf_a_sympathie.png" alt="Psychology of likability"/>
-      </div>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-top:1.5rem; border-top:1px solid rgba(28,31,59,0.08); padding-top:1.25rem;">
-        <div>
-          <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#5580ED; margin-bottom:0.4rem;">Warmth before competence</p>
-          <p class="section-body">Profile structure: icebreaker, photo, tags (life stage, commitment, ambition), hobby photo.</p>
-        </div>
-        <div>
-          <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#5580ED; margin-bottom:0.4rem;">Not like Bumble</p>
-          <p class="section-body">Dating apps lead with photos. Buddy First leads with personality. A deliberate departure.</p>
-        </div>
-      </div>
+    <div class="section" id="profile">
+      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Profile Design</p>
+      <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Warmth before competence.</h2>
+      <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">Research on instant likability (thin slicing) shows that warmth is assessed before competence. I structured the profile accordingly: icebreaker prompt first, then photo, then tags for life stage, commitment, and ambition. The goal is to communicate personality and intention before signalling skills or interests. A deliberate departure from dating apps like Bumble, where the photo always comes first.</p>
+      <img src="bf_a_sympathie.png" alt="Psychology of likability" class="img-md"/>
     </div>
 
     <!-- 11. FLOW -->
@@ -381,7 +365,7 @@
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Wireframes</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">From idea to first prototype.</h2>
       <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">MVP flow: find a person, make contact, go together. No features added for feature's sake.</p>
-      <img src="bf_wireframes_auswahl.png" alt="Wireframes" class="img-md"/>
+      <img src="bf_wireframes_auswahl.png" alt="Wireframes" class="img-hero"/>
     </div>
 
     <!-- 12. UI SCREENS -->

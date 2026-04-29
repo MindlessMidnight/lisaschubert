@@ -18,6 +18,50 @@
     nav a.nav-link:hover::after { width:100%; }
     .placeholder-img { background:#E8E4DC; border-radius:0.75rem; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:0.5rem; padding:2rem; margin:2rem auto 0; max-width:38rem; width:100%; }
     .placeholder-img span { font-size:0.72rem; color:#8e8a82; font-family:monospace; }
+
+    /* ── Sticky sidebar ── */
+    .page-layout { display:grid; grid-template-columns:180px 1fr; gap:0; max-width:1100px; margin:0 auto; padding:0 2rem; }
+    .sidebar { position:relative; }
+    .sidebar-inner { position:sticky; top:6rem; padding-top:0.25rem; }
+    .sidebar-nav { display:flex; flex-direction:column; gap:0; }
+    .sidebar-nav a {
+      display:block; font-size:11px; font-weight:500; letter-spacing:0.04em;
+      color:#9A9EB8; text-decoration:none; padding:7px 0 7px 16px;
+      border-left:1.5px solid transparent;
+      transition:color 0.2s, border-color 0.2s;
+      line-height:1.3;
+    }
+    .sidebar-nav a:hover { color:#1C1F3B; }
+    .sidebar-nav a.active { color:#1C1F3B; border-left-color:#5580ED; font-weight:600; }
+    .main-content { min-width:0; padding-left:3rem; }
+
+    /* ── Ethics list (no cards) ── */
+    .ethics-list { display:flex; flex-direction:column; gap:0; margin-top:1.5rem; }
+    .ethics-item {
+      display:flex; align-items:flex-start; gap:1rem;
+      padding:1.1rem 0;
+      border-bottom:1px solid rgba(28,31,59,0.08);
+    }
+    .ethics-item:last-child { border-bottom:none; }
+    .ethics-spark {
+      color:#5580ED; font-size:15px; flex-shrink:0; margin-top:1px;
+      line-height:1;
+    }
+    .ethics-body {}
+    .ethics-title {
+      font-size:14px; font-weight:600; color:#1C1F3B;
+      padding-bottom:3px;
+      display:inline-block;
+      border-bottom:1.5px solid #5580ED;
+      margin-bottom:5px;
+    }
+    .ethics-desc { font-size:13px; color:#555870; font-weight:300; line-height:1.6; }
+
+    @media(max-width:768px){
+      .page-layout { grid-template-columns:1fr; }
+      .sidebar { display:none; }
+      .main-content { padding-left:0; }
+    }
   </style>
 </head>
 <body class="text-[#1C1F3B] min-h-screen overflow-x-hidden">
@@ -32,7 +76,7 @@
   </nav>
 
   <!-- PAGE HEADER -->
-  <div class="max-w-3xl mx-auto px-10 pt-36 pb-16">
+  <div class="max-w-5xl mx-auto px-10 pt-36 pb-16">
     <a href="index.html" class="inline-flex items-center gap-2 text-[#555870] text-sm mb-10 hover:text-[#1C1F3B] transition-colors">← All Projects</a>
     <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">UX Research &nbsp;·&nbsp; Product Design &nbsp;·&nbsp; Bootcamp</p>
     <h1 class="text-[#1C1F3B] mb-4" style="font-family:'Newsreader',serif; font-weight:500; font-size:clamp(2rem,4vw,3.2rem); line-height:1.15;">Buddy First: How hobby connections grow into real relationships</h1>
@@ -45,17 +89,47 @@
     </div>
   </div>
 
-  <div class="max-w-3xl mx-auto px-10 pb-32">
+  <div class="page-layout pb-32">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="sidebar-inner">
+        <nav class="sidebar-nav">
+          <a href="#context" data-section="context">Context</a>
+          <a href="#research" data-section="research">Research</a>
+          <a href="#insights" data-section="insights">Key Insights</a>
+          <a href="#persona" data-section="persona">Persona</a>
+          <a href="#critical-moment" data-section="critical-moment">Critical Moment</a>
+          <a href="#reframing" data-section="reframing">Problem Reframing</a>
+          <a href="#core-insight" data-section="core-insight">Core Insight</a>
+          <a href="#opportunity" data-section="opportunity">Opportunity</a>
+          <a href="#solution" data-section="solution">Solution</a>
+          <a href="#principle" data-section="principle">Design Principle</a>
+          <a href="#competitors" data-section="competitors">Competitors</a>
+          <a href="#profile" data-section="profile">Profile Design</a>
+          <a href="#flow" data-section="flow">User Flow</a>
+          <a href="#wireframes" data-section="wireframes">Wireframes</a>
+          <a href="#screens" data-section="screens">Key Screens</a>
+          <a href="#moodboard" data-section="moodboard">Visual Direction</a>
+          <a href="#testing" data-section="testing">Usability Testing</a>
+          <a href="#ethics" data-section="ethics">Design Ethics</a>
+          <a href="#metrics" data-section="metrics">Success Metrics</a>
+          <a href="#learnings" data-section="learnings">Learnings</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="main-content">
 
     <!-- 1. INTRO -->
-    <div class="section">
+    <div class="section" id="context">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Context</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">People want connection. But often don't act on it.</h2>
       <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">In recent years, loneliness has increasingly been recognised as a societal issue, not because people are alone, but because meaningful, real-world connections are harder to build. More people actively look for connection through shared hobbies and activities. Especially after phases like university or school, social structures fade and meeting new people requires more effort. This creates a paradox: people want connection, but often don't act on it.</p>
     </div>
 
     <!-- 2. RESEARCH -->
-    <div class="section">
+    <div class="section" id="research">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Research</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">3 interviews. 21 survey participants. One clear pattern.</h2>
       <p class="text-[#555870] text-base leading-relaxed mb-6" style="font-weight:300;">To better understand this problem, I conducted qualitative interviews and a survey. The results showed that 61.9% feel uncertainty when trying to meet new people, many hesitate to join new groups or events, and shared activities are a key driver for connection. A recurring concern was consistent across participants.</p>
@@ -66,7 +140,7 @@
     </div>
 
     <!-- 3. CORE INSIGHTS -->
-    <div class="section">
+    <div class="section" id="insights">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Key Insights</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">A gap between intention and action.</h2>
       <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">From the research, a clear behavioural pattern emerged: people want connection, but avoid uncertain social situations, especially when they have to take the first step alone. The problem is not motivation. It is friction.</p>
@@ -76,7 +150,7 @@
     </div>
 
     <!-- 4. PERSONA -->
-    <div class="section">
+    <div class="section" id="persona">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Persona</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Sarah: the user at the centre.</h2>
       <p class="text-[#555870] text-base leading-relaxed mb-5" style="font-weight:300;">Based on these insights, I defined a core user. Sarah is 33, recently moved to a new city, and looks for activities and events. She wants to meet new people but feels unsure in unfamiliar group situations and prefers smaller, more predictable interactions. She is not isolated. She simply lacks shared experiences.</p>
@@ -88,7 +162,7 @@
     </div>
 
     <!-- 5. CENTRAL MOMENT -->
-    <div class="section">
+    <div class="section" id="critical-moment">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">The Critical Moment</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">She sees an event she would enjoy. But she doesn't go.</h2>
       <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">Sarah comes home after work. She sees an event she would enjoy. But she doesn't go. Not because she isn't interested, but because she doesn't want to go alone. This one moment captures the entire problem.</p>
@@ -96,7 +170,7 @@
     </div>
 
     <!-- 6. THE PROBLEM -->
-    <div class="section">
+    <div class="section" id="reframing">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Problem Reframing</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">People don't struggle to find opportunities. They struggle to act on them.</h2>
       <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">Many interactions stay superficial because the transition to real-world action never happens. The problem shifted multiple times during research, from finding people, to building lasting connections, to the real pre-problem: taking the first step at all.</p>
@@ -104,7 +178,7 @@
     </div>
 
     <!-- 7. CORE INSIGHT -->
-    <div class="section">
+    <div class="section" id="core-insight">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Core Insight</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Connections don't fail at matching. They fail at the first step.</h2>
       <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">Users don't need more options. They need a simpler, safer way to act. The biggest barrier is not social interest. It is the perceived risk of initiating.</p>
@@ -148,14 +222,14 @@
     </div>
 
     <!-- 8. OPPORTUNITY -->
-    <div class="section">
+    <div class="section" id="opportunity">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Opportunity</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">What if we reduce the barrier of the first step?</h2>
       <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">Instead of asking users to join groups or approach strangers, we can create smaller, more manageable interactions. The goal is not to design a better event platform. It is to design a better first step.</p>
     </div>
 
     <!-- 9. SOLUTION -->
-    <div class="section">
+    <div class="section" id="solution">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">The Solution</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Buddy-first instead of event-first.</h2>
       <p class="text-[#555870] text-base leading-relaxed mb-6" style="font-weight:300;">While researching other apps, I noticed that most non-dating platforms are event-first: sign up and hope someone will be there. Buddy First flips this. Meet one person first, then go together. A fundamental structural difference.</p>
@@ -163,7 +237,7 @@
     </div>
 
     <!-- 10. DESIGN PRINCIPLE -->
-    <div class="section">
+    <div class="section" id="principle">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Design Principle</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Break large social steps into smaller, manageable actions.</h2>
       <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">Smaller steps reduce uncertainty. Clarity increases action. Low pressure encourages participation. People are more likely to change their behaviour when the situation changes, not when they are encouraged to act differently.</p>
@@ -171,7 +245,7 @@
     </div>
 
     <!-- COMPETITOR ANALYSIS -->
-    <div class="section">
+    <div class="section" id="competitors">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Competitor Analysis</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">What existing apps get wrong.</h2>
       <p class="text-[#555870] text-base leading-relaxed mb-5" style="font-weight:300;">The analysis of existing platforms surfaced a consistent problem: most apps are built around events, not people. They also rely on patterns that increase anxiety rather than reduce it.</p>
@@ -192,7 +266,7 @@
     </div>
 
     <!-- PROFILE DESIGN -->
-    <div class="section">
+    <div class="section" id="profile">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Profile Design</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Warmth before competence.</h2>
       <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">Research on instant likability (thin slicing) shows that warmth is assessed before competence. I structured the profile accordingly: icebreaker prompt first, then photo, then tags for life stage, commitment, and ambition. The goal is to communicate personality and intention before signalling skills or interests. A deliberate departure from dating apps like Bumble, where the photo always comes first.</p>
@@ -200,19 +274,18 @@
     </div>
 
     <!-- 11. FLOW -->
-    <div class="section">
+    <div class="section" id="flow">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">User Flow</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">From discovery to real interaction.</h2>
       <p class="text-[#555870] text-base leading-relaxed mb-8" style="font-weight:300;">The product guides users through a structured, low-pressure flow. Five navigation sections, each mapping to one concrete user need.</p>
-      <div class="grid grid-cols-3 gap-6">
-        <img src="bf_flow1.JPG" alt="User flow" class="rounded-xl w-full h-auto"/>
-        <img src="bf_flow2.JPG" alt="Navigation flow" class="rounded-xl w-full h-auto"/>
+      <div>
+        <img src="bf_flow1.JPG" alt="User flow" style="display:block; margin:0 auto; max-width:44rem; width:100%; border-radius:0.75rem;"/>
         <img src="bf_IA_struktur.JPG" alt="IA structure" class="rounded-xl w-full h-auto"/>
       </div>
     </div>
 
     <!-- WIREFRAMES -->
-    <div class="section">
+    <div class="section" id="wireframes">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Wireframes</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">From idea to first prototype.</h2>
       <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">MVP flow: find a person, make contact, go together. No features added for feature's sake.</p>
@@ -220,7 +293,7 @@
     </div>
 
     <!-- 12. UI SCREENS -->
-    <div class="section">
+    <div class="section" id="screens">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Key Interaction Moments</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">The product in action.</h2>
       <p class="text-[#555870] text-base leading-relaxed mb-8" style="font-weight:300;">Four screens show the core flow: browse and scroll, filter by context, match, and send an activity invitation.</p>
@@ -238,7 +311,7 @@
     </div>
 
     <!-- 13. MOODBOARD -->
-    <div class="section">
+    <div class="section" id="moodboard">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Visual Direction</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Warm, approachable, low-pressure.</h2>
       <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">The visual direction reflects a safe and comfortable social experience. The tone avoids dating-app aesthetics and corporate minimalism. It should feel like something you would actually want to use on a quiet evening.</p>
@@ -246,7 +319,7 @@
     </div>
 
     <!-- USABILITY TESTING -->
-    <div class="section">
+    <div class="section" id="testing">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Usability Testing</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Testing assumptions with real users.</h2>
       <p class="text-[#555870] text-base leading-relaxed mb-5" style="font-weight:300;">I ran usability tests using a structured test script. Scenario: "You just moved to Munich and want to find someone who also knits." Tests run without guiding participants. Two central questions guided the sessions: does the profile create a genuine desire to reach out, and is the transition from match to meetup clear?</p>
@@ -261,14 +334,44 @@
     </div>
 
     <!-- ETHICS -->
-    <div class="section">
+    <div class="section" id="ethics">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Design Ethics</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Design with a stance.</h2>
-      <p class="text-[#555870] text-base leading-relaxed mb-5" style="font-weight:300;">Every design decision has an ethical dimension. I made four commitments from the start: no FOMO pressure, core features for everyone, cognitive accessibility, and matching based on intent rather than spam.</p>
+      <p class="text-[#555870] text-base leading-relaxed mb-6" style="font-weight:300;">Every design decision has an ethical dimension. I made four commitments from the start.</p>
+      <div class="ethics-list">
+        <div class="ethics-item">
+          <span class="ethics-spark">✦</span>
+          <div class="ethics-body">
+            <span class="ethics-title">No FOMO pressure</span>
+            <p class="ethics-desc">No notifications about missed events or social pressure tactics</p>
+          </div>
+        </div>
+        <div class="ethics-item">
+          <span class="ethics-spark">✦</span>
+          <div class="ethics-body">
+            <span class="ethics-title">Core features for everyone</span>
+            <p class="ethics-desc">No key functionality hidden behind a paywall</p>
+          </div>
+        </div>
+        <div class="ethics-item">
+          <span class="ethics-spark">✦</span>
+          <div class="ethics-body">
+            <span class="ethics-title">Cognitive accessibility</span>
+            <p class="ethics-desc">Few decisions at once, clear language, minimal cognitive load</p>
+          </div>
+        </div>
+        <div class="ethics-item">
+          <span class="ethics-spark">✦</span>
+          <div class="ethics-body">
+            <span class="ethics-title">Considered invitations</span>
+            <p class="ethics-desc">Matching based on intent, not mass outreach or spam</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- SUCCESS METRICS -->
-    <div class="section">
+    <div class="section" id="metrics">
       <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Success Metrics</p>
       <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">How is success measured?</h2>
       <div class="grid grid-cols-2 gap-4">
@@ -286,7 +389,7 @@
     </div>
 
     <!-- LEARNINGS -->
-    <div style="background:#FEF9C3; border:1px solid #5580ED; border-left:4px solid #5580ED; border-radius:0 12px 12px 0; padding:1.75rem; margin-bottom:5rem;">
+    <div id="learnings" style="background:#FEF9C3; border:1px solid #5580ED; border-left:4px solid #5580ED; border-radius:0 12px 12px 0; padding:1.75rem; margin-bottom:5rem;">
       <p style="font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#5580ED; margin:0 0 1.25rem;">What I learned</p>
       <div style="display:flex; flex-direction:column; gap:1rem;">
         <div style="display:flex; gap:0.75rem;"><span style="color:#5580ED; font-size:14px; flex-shrink:0;">✦</span><p style="font-size:15px; color:#1C1F3B; margin:0; line-height:1.6;"><strong>UX Research:</strong> conducting and synthesising qualitative interviews, surveys and affinity mapping</p></div>
@@ -312,11 +415,43 @@
       </div>
     </div>
 
-  </div>
+    </div><!-- end main-content -->
+  </div><!-- end page-layout -->
 
   <footer class="bg-[#1C1F3B] border-t border-[#FAF5E8]/10 py-6 text-center text-[#FAF5E8]/30 text-xs">
     © 2026 Lisa Schubert · UX Designer &amp; Illustrator
   </footer>
 
+  <script>
+    const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+    const sections = [];
+    sidebarLinks.forEach(link => {
+      const id = link.getAttribute('href').replace('#','');
+      const el = document.getElementById(id);
+      if(el) sections.push({ id, el, link });
+    });
+
+    function onScroll() {
+      const scrollY = window.scrollY + 120;
+      let current = sections[0];
+      for(const s of sections) {
+        if(s.el.offsetTop <= scrollY) current = s;
+      }
+      sidebarLinks.forEach(l => l.classList.remove('active'));
+      if(current) current.link.classList.add('active');
+    }
+
+    window.addEventListener('scroll', onScroll, { passive:true });
+    onScroll();
+
+    sidebarLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const id = link.getAttribute('href').replace('#','');
+        const el = document.getElementById(id);
+        if(el) window.scrollTo({ top: el.offsetTop - 90, behavior:'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>
