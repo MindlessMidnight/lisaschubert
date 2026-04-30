@@ -8,8 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet"/>
   <style>
     body { font-family: 'DM Sans', sans-serif; background-color: #FAF5E8; }
-    .section { margin-bottom: 2.5rem; }
-    .phase-block { padding-top: 4rem; margin-top: 1rem; border-top: 1.5px solid rgba(28,31,59,0.1); }
+    .section { margin-bottom: 4rem; }
+    .phase-block { padding-top: 4rem; margin-top: 0; border-top: 1.5px solid rgba(28,31,59,0.1); }
     .phase-block:first-child { padding-top: 0; margin-top: 0; border-top: none; }
 
     .img-hero  { display:block; margin:1.25rem auto 0; width:100%; border-radius:0.75rem; height:auto; }
@@ -89,7 +89,7 @@
     /* ── Shared text classes ── */
     .section-label { font-size:0.7rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#5580ED; margin-bottom:0.75rem; }
     .section-h2 { font-family:'Newsreader',serif; font-weight:500; font-size:1.6rem; line-height:1.25; color:#1C1F3B; margin-bottom:0.25rem; }
-    .section-body { font-size:1rem; color:#555870; font-weight:300; line-height:1.75; }
+    .section-body { font-size:1rem; color:#555870; font-weight:300; line-height:1.6; }
 
     @media(max-width:768px){
       .page-layout { grid-template-columns:1fr; }
@@ -151,13 +151,17 @@
     <!-- 1. INTRO -->
     <div class="section" id="context">
       <p class="section-label">Why this problem matters</p>
-      <h2 class="section-h2">People want connection more than ever, yet struggle to actually build it.</h2>
-      <p class="section-body" style="margin-bottom:0.75rem;">Loneliness has increasingly been described as a public health issue, not because people are alone, but because meaningful, recurring connections are missing.</p>
-      <p class="section-body" style="margin-bottom:0.75rem;">People actively look for connection through shared activities and hobbies. Yet a gap remains: people don't struggle to find opportunities, they struggle to act on them.</p>
-      <div class="highlight">
-        <p class="text-[#1C1F3B]" style="font-weight:500; font-size:1rem; line-height:1.6;">People don't avoid events because they don't want to go.<br/>They avoid them because they don't want to go alone.</p>
+      <div style="display:grid; grid-template-columns:1fr 240px; gap:1.75rem; align-items:start;">
+        <div>
+          <h2 class="section-h2">People want connection more than ever, yet struggle to actually build it.</h2>
+          <p class="section-body" style="margin-top:0.75rem; margin-bottom:0.75rem;">Loneliness has increasingly been described as a public health issue, not because people are alone, but because meaningful, recurring connections are missing.</p>
+          <p class="section-body" style="margin-bottom:0.75rem;">People actively look for connection through shared activities and hobbies. Yet a gap remains: people don't struggle to find opportunities, they struggle to act on them.</p>
+          <div class="highlight">
+            <p class="text-[#1C1F3B]" style="font-weight:500; font-size:1rem; line-height:1.6;">People don't avoid events because they don't want to go. They avoid them because they don't want to go alone.</p>
+          </div>
+        </div>
+        <img src="bf_a_standingalone.png" alt="Standing alone" style="width:240px; height:auto; margin-top:0;"/>
       </div>
-      <p class="section-body" style="margin-top:0.75rem;"></p>
     </div>
 
     <!-- 2. RESEARCH -->
@@ -181,7 +185,7 @@
       <div class="highlight" style="margin-top:1.25rem;">
         <p class="text-[#1C1F3B] text-sm italic">"My worst fear is that everyone is already talking to each other and I end up standing alone."</p>
       </div>
-      <p class="section-body" style="margin-top:0.75rem;">61.9% name uncertainty as the biggest barrier to meeting new people. The barrier is not access. It is uncertainty.</p>
+      <p class="section-body" style="margin-top:0.75rem;">The barrier is not access. It is uncertainty.</p>
     </div>
 
     <!-- 3. KEY INSIGHTS -->
@@ -209,22 +213,22 @@
     <div class="section" id="persona">
       <p class="section-label">Persona</p>
       <h2 class="section-h2">Sarah: the user at the centre.</h2>
-      <div style="display:grid; grid-template-columns:260px 1fr; gap:0; align-items:start; margin-top:1rem; border-top:1px solid rgba(28,31,59,0.08); padding-top:1rem;">
-        <div style="padding-right:2.5rem; border-right:1px solid rgba(28,31,59,0.08);">
+      <div style="display:grid; grid-template-columns:220px 1fr; gap:0; align-items:start; margin-top:1rem; border-top:1px solid rgba(28,31,59,0.08); padding-top:1rem;">
+        <div style="padding-right:1.5rem; border-right:1px solid rgba(28,31,59,0.08);">
           <p style="font-size:0.9rem; font-weight:600; color:#1C1F3B; margin-bottom:0.2rem;">Sarah, 33</p>
           <p style="font-size:0.75rem; color:#5580ED; font-weight:500; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">Data Science Consultant,<br/>recently moved to Hamburg</p>
-          <p class="section-body">K-Pop, Escape Rooms, Hiking. Not shy. She just needs the situation to feel safe before taking the first step.</p>
+          <p class="section-body">She wants to meet new people through shared activities, but hesitates in unfamiliar group situations.</p>
         </div>
-        <div style="padding-left:2.5rem;">
-          <ul style="list-style:disc; padding-left:1.1rem; margin:0; display:flex; flex-direction:column; gap:0.4rem;">
+        <div style="padding-left:1.5rem;">
+          <ul style="list-style:disc; padding-left:1.1rem; margin:0; display:flex; flex-direction:column; gap:0.5rem;">
             <li class="section-body">Recently moved, social network reset</li>
-            <li class="section-body">Wants to meet people through hobbies</li>
-            <li class="section-body">Hesitates in unfamiliar group situations</li>
-            <li class="section-body">Sees an event she'd enjoy, and doesn't go</li>
+            <li class="section-body">Looks for connection through hobbies (K-Pop, Escape Rooms, Hiking)</li>
+            <li class="section-body">Needs situations to feel safe before acting</li>
+            <li class="section-body">Sees events she'd enjoy, but doesn't go</li>
           </ul>
         </div>
       </div>
-      <img src="bf_a_centralmoment.png" alt="The critical moment" class="img-md" style="margin-top:2.5rem;"/>
+      <img src="bf_a_centralmoment.png" alt="The critical moment" class="img-md" style="margin-top:1.5rem;"/>
     </div>
 
     </div><!-- end discover -->
@@ -232,12 +236,43 @@
     <!-- PHASE 2: DEFINE -->
     <div id="define" class="phase-block">
 
-    <!-- PROBLEM REFRAMING -->
+    <!-- FROM INSIGHT TO DECISION (moved reframing up) -->
     <div class="section" id="reframing">
       <p class="section-label">Problem Reframing</p>
-      <h2 class="section-h2">People don't struggle to find opportunities. They struggle to act on them.</h2>
-      <p class="section-body">HMW: "How might we help Sarah initiate a new connection through her hobby without the fear of showing up alone?"</p>
-      <img src="bf_a_problemreframe.png" alt="From finding to connecting" class="img-md"/>
+      <h2 class="section-h2">How the understanding of the problem evolved.</h2>
+
+      <div style="margin-top:1.25rem; display:flex; flex-direction:column; gap:0;">
+        <!-- Step 1: plain text -->
+        <div style="display:flex; align-items:baseline; gap:1rem; padding:0.6rem 0; border-bottom:1px solid rgba(28,31,59,0.06);">
+          <span style="font-size:0.65rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#C0C3D4; min-width:72px; flex-shrink:0;">Assumption</span>
+          <p style="font-size:0.9rem; color:#9A9EB8; font-weight:300; margin:0; line-height:1.5;">People struggle to find others with shared interests.</p>
+        </div>
+        <!-- Step 2: plain text -->
+        <div style="display:flex; align-items:baseline; gap:1rem; padding:0.6rem 0; border-bottom:1px solid rgba(28,31,59,0.06);">
+          <span style="font-size:0.65rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#8A8EA8; min-width:72px; flex-shrink:0;">Research</span>
+          <p style="font-size:0.9rem; color:#6B7080; font-weight:300; margin:0; line-height:1.5;">People are already finding opportunities through events, communities, and platforms.</p>
+        </div>
+        <!-- Step 3: highlighted box only here -->
+        <div style="display:flex; align-items:baseline; gap:1rem; padding:0.8rem 0;">
+          <span style="font-size:0.65rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#5580ED; min-width:72px; flex-shrink:0;">Insight</span>
+          <div style="background:#EEF2FF; border-left:3px solid #5580ED; border-radius:0 8px 8px 0; padding:0.75rem 1rem;">
+            <p style="font-size:1rem; font-weight:600; color:#1C1F3B; margin:0 0 0.25rem; line-height:1.4;">People don't struggle to find opportunities. They struggle to act on them.</p>
+            <p style="font-size:0.85rem; color:#555870; font-weight:300; margin:0;">The barrier is not discovery. It is the first step.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:2rem; margin-top:1.75rem;">
+        <img src="bf_a_shakinghands.png" alt="Shaking hands" style="width:275px; border-radius:0.75rem; height:auto; flex-shrink:0;"/>
+        <svg width="90" height="40" viewBox="0 0 90 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+          <line x1="4" y1="20" x2="72" y2="20" stroke="#5580ED" stroke-width="3" stroke-linecap="round"/>
+          <polyline points="60,8 76,20 60,32" fill="none" stroke="#5580ED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <img src="bf_a_cliffjump.png" alt="Taking the leap" style="width:275px; border-radius:0.75rem; height:auto; flex-shrink:0;"/>
+      </div>
+      <div style="margin-top:2rem; padding:1.25rem 0;">
+        <span style="color:#F5C842; font-size:2rem; margin-right:1rem;">★</span><span style="font-size:1.4rem; font-weight:600; color:#1C1F3B; font-style:italic;">"How might we help Sarah initiate a new connection through her hobby?"</span><span style="color:#F5C842; font-size:2rem; margin-left:1rem;">★</span>
+      </div>
     </div>
 
     <!-- FROM INSIGHT TO DECISION -->
@@ -287,26 +322,35 @@
     <div id="design" class="phase-block">
 
     <!-- SOLUTION -->
-    <div class="section split-section" id="solution">
-      <div class="split-layout split-img-left">
-        <img src="bf_a_solutions.png" alt="Two approaches"/>
-        <div class="split-text" style="padding-top:0;">
-          <p class="split-section-label" style="margin-bottom:0.5rem;">The Solution</p>
-          <h2 style="margin-top:0;">Buddy First instead of Event First.</h2>
-          <p style="margin-top:0.75rem;">Most platforms are event-first: sign up and hope someone will be there.<br/>Buddy First flips this: find one person first, then go together.</p>
+    <div class="section" id="solution">
+      <p class="section-label">The Solution</p>
+      <h2 class="section-h2">Buddy First instead of Event First.</h2>
+      <p class="section-body" style="margin-bottom:1.5rem;">Most platforms are event-first: sign up and hope someone will be there. Buddy First flips this: find one person first, then go together.</p>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:end;">
+        <img src="bf_a_buddyfirst.png" alt="Buddy First" style="width:80%; border-radius:0.75rem; height:auto; display:block; margin:0 auto; max-height:240px; object-fit:contain; object-position:bottom;"/>
+        <img src="bf_aassistant.png" alt="Social Assistant" style="width:50%; border-radius:0.75rem; height:auto; display:block; margin:0 auto; max-height:240px; object-fit:contain; object-position:bottom;"/>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-top:1rem;">
+        <div style="border:1.5px dashed #5580ED; border-radius:8px; padding:1rem;">
+          <p style="font-size:0.95rem; font-weight:700; color:#5580ED; margin-bottom:0.4rem;">Buddy First ✓</p>
+          <p style="font-size:0.95rem; color:#555870; font-weight:300; margin:0;">App connects Sarah with a matching activity buddy so she never shows up alone to events, courses, or meetups.</p>
+        </div>
+        <div style="border:1.5px dashed rgba(28,31,59,0.2); border-radius:8px; padding:1rem;">
+          <p style="font-size:0.95rem; font-weight:700; color:#555870; margin-bottom:0.4rem;">Social Assistant ✗</p>
+          <p style="font-size:0.95rem; color:#9A9EB8; font-weight:300; margin:0;">An AI assistant that encourages Sarah to attend group events alone and approach people there.</p>
         </div>
       </div>
     </div>
 
     <!-- DESIGN PRINCIPLE -->
-    <div class="section split-section" id="principle">
-      <div class="split-layout split-img-right">
-        <div class="split-text" style="padding-top:0;">
-          <p class="split-section-label" style="margin-bottom:0.5rem;">Design Principle</p>
-          <h2 style="margin-top:0;">Break large social steps into smaller, manageable actions.</h2>
-          <p style="margin-top:0.75rem;">Smaller steps reduce uncertainty. Clarity increases action. People change when the situation changes, not when they're told to act differently.</p>
+    <div class="section" id="principle">
+      <div style="display:grid; grid-template-columns:55fr 45fr; gap:2.5rem; align-items:center;">
+        <img src="bf_a_designdecision.png" alt="Design principle" style="width:100%; border-radius:0.75rem; height:auto;"/>
+        <div>
+          <p class="section-label" style="margin-bottom:0.4rem;">Design Principle</p>
+          <h2 class="section-h2" style="margin-top:0;">Break large social steps into smaller, manageable actions.</h2>
+          <p class="section-body" style="margin-top:0.75rem;">Smaller steps reduce uncertainty. Clarity increases action. People change when the situation changes, not when they're told to act differently.</p>
         </div>
-        <img src="bf_a_principle.png" alt="Design principle"/>
       </div>
     </div>
 
@@ -332,23 +376,35 @@
     </div>
 
     <!-- PROFILE DESIGN -->
-    <div class="section split-section" id="profile">
-      <div class="split-layout split-img-right">
-        <div class="split-text" style="padding-top:0;">
-          <p class="split-section-label">Profile Design</p>
-          <h2>Warmth before competence.</h2>
-          <p style="margin-top:0.75rem;">Warmth is assessed before competence. So the profile leads with an icebreaker prompt, not a photo. Personality and intention before appearance.</p>
+    <div class="section" id="profile">
+      <p class="section-label">Profile Design</p>
+      <h2 class="section-h2">Warmth before competence.</h2>
+
+      <!-- Row 1: intro text left, findingcommunity image middle, narrow box right -->
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) 160px minmax(0,0.7fr); gap:1.25rem; align-items:start; margin-top:0.75rem;">
+        <div>
+          <p class="section-body" style="margin-bottom:0.5rem;">People form impressions before seconds.</p>
+          <p class="section-body">Warmth is perceived before competence. The profile reflects this — leading with personality rather than a list of facts or a photo.</p>
         </div>
-        <img src="bf_a_sympathie.png" alt="Psychology of likability"/>
+        <img src="bf_a_findingcommunity.png" alt="Find community" style="width:160px; height:auto; border-radius:0.75rem;"/>
+        <div style="background:rgba(28,31,59,0.03); border-radius:8px; padding:0.9rem 1.1rem; align-self:stretch; display:flex; flex-direction:column; justify-content:center;">
+          <p style="font-size:0.85rem; color:#1C1F3B; font-weight:500; margin-bottom:0.3rem;">People decide in seconds whether they find someone likeable.</p>
+          <p style="font-size:0.82rem; color:#555870; font-weight:300; margin:0;">First impressions form extremely fast. Warmth and similarity matter most in early contact.</p>
+        </div>
       </div>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-top:1.5rem;">
-        <div>
-          <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#5580ED; margin-bottom:0.4rem;">Warmth before competence</p>
-          <p class="section-body">Profile structure: icebreaker, photo, tags (life stage, commitment, ambition), hobby photo.</p>
-        </div>
-        <div>
-          <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#5580ED; margin-bottom:0.4rem;">Not like Bumble</p>
-          <p class="section-body">Dating apps lead with photos. Buddy First leads with personality and intent. Appearance comes second.</p>
+
+      <!-- Row 2: hello image left, warmth + not-like-bumble text right -->
+      <div style="display:grid; grid-template-columns:160px minmax(0,1fr); gap:1.5rem; align-items:start; margin-top:1.5rem;">
+        <img src="bf_a_hello.png" alt="Profile icebreaker" style="width:160px; height:auto; border-radius:0.75rem;"/>
+        <div style="display:flex; flex-direction:column; gap:1.25rem;">
+          <div>
+            <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#5580ED; margin-bottom:0.4rem;">Warmth before competence</p>
+            <p class="section-body">Profile structure: icebreaker prompt first, then photo, then context tags (life stage, commitment level, ambition), then hobby photo. Each element is chosen to signal personality and intent — not just credentials.</p>
+          </div>
+          <div>
+            <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#5580ED; margin-bottom:0.4rem;">Not like Bumble</p>
+            <p class="section-body">Dating apps lead with photos. Buddy First leads with personality and intent. Appearance comes second — because shared hobbies attract, but personality decides whether you actually want to go together.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -496,7 +552,7 @@
     </div><!-- end main-content -->
   </div><!-- end page-layout -->
 
-  <footer class="bg-[#1C1F3B] border-t border-[#FAF5E8]/10 py-6 text-center text-[#FAF5E8]/30 text-xs">
+  <footer style="background:#1C1F3B; width:100%; padding:2.5rem 0; text-align:center; color:rgba(250,245,232,0.3); font-size:0.75rem; margin-top:0; display:block;">
     © 2026 Lisa Schubert · UX Designer &amp; Illustrator
   </footer>
 
