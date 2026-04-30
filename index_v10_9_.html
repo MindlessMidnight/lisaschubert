@@ -12,7 +12,6 @@
     .spark-2 { animation: floatSpark 3s ease-in-out infinite; animation-delay: 0.8s; }
     .spark-3 { animation: floatSpark 3s ease-in-out infinite; animation-delay: 1.6s; }
     @keyframes floatSpark { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
-    @keyframes peekSpark { 0%, 100% { transform: translateY(18px); opacity:0.3; } 50% { transform: translateY(-18px); opacity:1; } }
     .blob-teal { position: absolute; bottom: 5%; right: -20px; width: 420px; height: 340px; background: radial-gradient(ellipse, #C8E8E7 0%, transparent 70%); border-radius: 50%; pointer-events: none; opacity: 0.55; }
     .blob-yellow { position: absolute; top: 14%; left: 20%; width: 320px; height: 320px; background: radial-gradient(ellipse, #FEF3BC 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
   </style>
@@ -70,7 +69,9 @@
   <section id="work" class="py-16 px-10 relative overflow-hidden" style="background-color:#FAF5E8;">
     <div style="position:absolute; top:10%; right:-60px; width:380px; height:300px; background:radial-gradient(ellipse, #C8E8E7 0%, transparent 70%); border-radius:50%; pointer-events:none; opacity:0.45;"></div>
     <div style="position:absolute; bottom:20%; left:-40px; width:280px; height:280px; background:radial-gradient(ellipse, #FEF3BC 0%, transparent 70%); border-radius:50%; pointer-events:none;"></div>
-
+    <span class="spark absolute text-[#F5C842] text-2xl" style="top:8%; right:22%; z-index:1;">✦</span>
+    <span class="spark-2 absolute text-[#F5C842] text-lg" style="bottom:30%; right:8%; z-index:1;">✦</span>
+    <span class="spark-3 absolute text-[#F5C842] text-3xl" style="top:55%; left:5%; z-index:1;">✦</span>
 
     <div class="max-w-7xl mx-auto relative z-10">
       <div class="mb-8">
@@ -80,7 +81,7 @@
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
 
         <div class="md:col-span-8" style="position:relative;">
-          <span class="spark-2 text-[#F5C842] text-4xl" style="position:absolute; left:-28px; top:8%; z-index:1; pointer-events:none;">✦</span>
+          <span class="spark-2 text-[#F5C842] text-4xl" style="position:absolute; left:-16px; top:40%; z-index:0; pointer-events:none;">✦</span>
           <a href="buddy-first.html" class="rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-500 block" style="background:white; border:1px solid rgba(28,31,59,0.1); position:relative; z-index:1;">
             <div style="aspect-ratio:16/9; background:#FEF3BC; display:flex; align-items:center; justify-content:center; padding:1.5rem; gap:1rem;">
               <img src="bf_midfi-start_scrolling.png" alt="Browse" style="height:100%; width:auto; object-fit:contain; border-radius:8px; flex-shrink:0;"/>
@@ -153,7 +154,7 @@
       <!-- Content left -->
       <div>
         <p class="text-[#5580ED] text-sm font-semibold tracking-wide uppercase mb-4">About</p>
-        <h2 class="text-5xl text-white mb-8" style="font-family:'Newsreader',serif; font-weight:500; line-height:1.15;">Hello, I'm Lisa,<br>a UX Designer.</h2>
+        <h2 class="text-5xl text-white mb-8" style="font-family:'Newsreader',serif; font-weight:500; line-height:1.15;">Hello, I'm Lisa, a UX Designer.</h2>
         <div class="space-y-5 text-white/70 text-base leading-relaxed" style="font-weight:300;">
           <p>I come from illustration and data visualisation and bring both into UX design. I'm driven by understanding how people think, feel, and act, and turning that into clear solutions.</p>
           <p>Four years as <strong class="text-white" style="font-weight:500;">Senior Presentation Designer at Statista</strong> taught me how to make complex content immediately understandable. That's exactly what good UX design is about.</p>
