@@ -5,9 +5,18 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>Feature Design – Lisa Schubert</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet"/>
   <style>
     body { font-family: 'DM Sans', sans-serif; background-color: #FAF5E8; }
+    .section-label { font-size:0.7rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#5580ED; margin-bottom:0.75rem; }
+    .section-h2 { font-family:'Newsreader',serif; font-weight:500; font-size:1.6rem; line-height:1.25; color:#1C1F3B; margin-bottom:0.75rem; }
+    .section-body { font-size:1rem; color:#555870; font-weight:300; line-height:1.6; }
+    .header-meta { display:flex; gap:0; border-top:1px solid rgba(28,31,59,0.08); padding-top:1.25rem; flex-wrap:wrap; }
+    .header-meta-item { padding-right:2.5rem; border-right:1px solid rgba(28,31,59,0.07); margin-right:2.5rem; }
+    .header-meta-item:last-child { padding-right:0; border-right:none; margin-right:0; }
+    .bullet-list { display:flex; flex-direction:column; gap:0.5rem; margin-top:0.75rem; }
+    .bullet-row { display:flex; gap:0.65rem; align-items:start; }
+    .section { margin-bottom:3.5rem; }
   </style>
 </head>
 <body class="text-[#1C1F3B] min-h-screen overflow-x-hidden">
@@ -21,70 +30,92 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <div class="max-w-4xl mx-auto px-10 pt-36 pb-12">
-    <a href="index.html" class="inline-flex items-center gap-2 text-[#555870] text-sm mb-8 hover:text-[#1C1F3B] transition-colors">← Alle Projekte</a>
+  <div class="max-w-4xl mx-auto px-10 pt-36 pb-10">
+    <a href="index.html" class="inline-flex items-center gap-2 text-[#555870] text-sm mb-8 hover:text-[#1C1F3B] transition-colors">← All Projects</a>
     <p class="text-[#5580ED] text-sm font-semibold tracking-wide uppercase mb-3">Feature Design · UX/UI</p>
     <h1 class="text-[#1C1F3B] mb-6" style="font-family:'Newsreader',serif; font-weight:500; font-size:clamp(2rem,4vw,3.5rem); line-height:1.1;">Rewards Feature: Team Collaboration App</h1>
-    <p class="text-[#555870] text-base leading-relaxed max-w-xl mb-8" style="font-weight:300;">Für eine UX-Agentur in Amsterdam: eine Punkte-Belohnungsfunktion mit Haustier-Thema, Milestone-Tracking und Team-Sharing.</p>
-    <div class="flex gap-8 border-t border-[#1C1F3B]/8 pt-6">
-      <div><p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Kontext</p><p class="text-sm text-[#555870]">Bewerbungsprojekt</p></div>
-      <div><p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Jahr</p><p class="text-sm text-[#555870]">2024</p></div>
-      <div><p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Rolle</p><p class="text-sm text-[#555870]">UX/UI Design</p></div>
-      <div><p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Tools</p><p class="text-sm text-[#555870]">Figma</p></div>
+    <p class="section-body mb-8">A design exercise completed as part of a job application process: a pet-themed points reward system with milestone tracking and team sharing, built in Figma.</p>
+    <div class="header-meta">
+      <div class="header-meta-item">
+        <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Context</p>
+        <p class="text-sm text-[#555870]">Job application exercise</p>
+      </div>
+      <div class="header-meta-item">
+        <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Year</p>
+        <p class="text-sm text-[#555870]">2024</p>
+      </div>
+      <div class="header-meta-item">
+        <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Role</p>
+        <p class="text-sm text-[#555870]">UX/UI Design</p>
+      </div>
+      <div class="header-meta-item">
+        <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Tools</p>
+        <p class="text-sm text-[#555870]">Figma</p>
+      </div>
     </div>
   </div>
 
-  <!-- Content -->
   <div class="max-w-4xl mx-auto px-10 pb-24">
 
-    <!-- Main image -->
-    <div class="rounded-xl overflow-hidden mb-8">
-      <img src="feature-design-01.png" alt="Projekt" class="w-full h-auto"/>
+    <div class="rounded-xl overflow-hidden mb-10">
+      <img src="feature-design-cover.png" alt="Feature Design Cover" class="w-full h-auto"/>
     </div>
 
-    <!-- Text block -->
-    <div class="mb-12">
-      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">Der Auftrag</p>
-      <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Engagement durch Design fördern</h2>
-      <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">Der Fokus lag auf Benutzerfreundlichkeit und Spaß. Nutzer:innen verfolgen Punkte und Meilensteine, setzen Fristen und verwalten Prioritäten über intuitive Icons. Ein Haustier-Thema personalisiert das Erlebnis.</p>
-    </div>
-
-    <!-- Image grid -->
-    <div class="grid grid-cols-2 gap-4 mb-12">
-      <img src="feature-design-02.png" alt="" class="rounded-xl w-full h-auto"/>
-      <img src="feature-design-03.png" alt="" class="rounded-xl w-full h-auto"/>
-    </div>
-
-    <!-- Learnings -->
-    <div style="background:#FEF9C3; border:1px solid #5580ED; border-left:4px solid #5580ED; border-radius:0 12px 12px 0; padding:1.5rem; margin-bottom:2rem;">
-      <p style="font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#5580ED; margin:0 0 1rem;">Was ich dabei gelernt habe</p>
-      <div class="space-y-3">
-        <div class="flex gap-3"><span class="text-[#5580ED]">✦</span><p class="text-[#1C1F3B] text-sm" style="font-weight:300;">Figma effizient nutzen: Komponenten, Auto Layout, Prototyping</p></div>
-        <div class="flex gap-3"><span class="text-[#5580ED]">✦</span><p class="text-[#1C1F3B] text-sm" style="font-weight:300;">Konzeptionelles Denken: von der Idee bis zur Umsetzung planen</p></div>
-        <div class="flex gap-3"><span class="text-[#5580ED]">✦</span><p class="text-[#1C1F3B] text-sm" style="font-weight:300;">Fokus auf Nutzer:innen: intuitive, motivierende Funktionen gestalten</p></div>
+    <div class="section">
+      <p class="section-label">The Brief</p>
+      <h2 class="section-h2">Designing for Engagement</h2>
+      <p class="section-body mb-4">As part of a job application process, I was asked to design a points-based reward feature for an existing team collaboration app. The goal: boost engagement by letting users collect points and redeem them for personal or team rewards.</p>
+      <div class="bullet-list">
+        <div class="bullet-row"><span class="text-[#5580ED]">✦</span><p class="section-body">Track points and milestones at a glance</p></div>
+        <div class="bullet-row"><span class="text-[#5580ED]">✦</span><p class="section-body">Set deadlines and manage priorities via intuitive icons</p></div>
+        <div class="bullet-row"><span class="text-[#5580ED]">✦</span><p class="section-body">Personalise with a pet theme (cat or dog persona, set in profile)</p></div>
+        <div class="bullet-row"><span class="text-[#5580ED]">✦</span><p class="section-body">Tag colleagues and share milestone celebrations with the team</p></div>
       </div>
     </div>
 
-    <!-- Next projects -->
+    <div class="grid grid-cols-4 gap-3 mb-3">
+      <img src="feature-design-02.png" alt="Milestone overview" class="rounded-xl w-full h-auto"/>
+      <img src="feature-design-02b.png" alt="Milestone detail" class="rounded-xl w-full h-auto"/>
+      <img src="feature-design-03.png" alt="Congrats modal" class="rounded-xl w-full h-auto"/>
+      <img src="feature-design-04.png" alt="Team sharing" class="rounded-xl w-full h-auto"/>
+    </div>
+    <p class="section-body text-sm mb-10">Milestone tracking with deadlines and priority icons. Reaching a milestone triggers a celebration that can be shared with the team.</p>
+
+    <div class="grid grid-cols-4 gap-3 mb-3">
+      <img src="feature-design-05.png" alt="Rewards screen" class="rounded-xl w-full h-auto"/>
+      <img src="feature-design-06.png" alt="Reward detail" class="rounded-xl w-full h-auto"/>
+      <img src="feature-design-07.png" alt="Delivery notification" class="rounded-xl w-full h-auto"/>
+      <img src="feature-design-08.png" alt="Personal or team reward" class="rounded-xl w-full h-auto"/>
+    </div>
+    <p class="section-body text-sm mb-10">Users choose between personal and team rewards via card-style options. A delivery notification closes the loop.</p>
+
+    <div style="background:#FEF9C3; border:1px solid #5580ED; border-left:4px solid #5580ED; border-radius:0 12px 12px 0; padding:1.5rem; margin-bottom:3rem;">
+      <p style="font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#5580ED; margin:0 0 1rem;">What I learned</p>
+      <div class="bullet-list">
+        <div class="bullet-row"><span class="text-[#5580ED]">✦</span><p class="text-[#1C1F3B] text-sm" style="font-weight:300;"><strong>Figma:</strong> components, Auto Layout, interactive prototyping</p></div>
+        <div class="bullet-row"><span class="text-[#5580ED]">✦</span><p class="text-[#1C1F3B] text-sm" style="font-weight:300;"><strong>Conceptual thinking:</strong> planning a full user flow from idea to implementation</p></div>
+        <div class="bullet-row"><span class="text-[#5580ED]">✦</span><p class="text-[#1C1F3B] text-sm" style="font-weight:300;"><strong>User focus:</strong> designing intuitive, motivating features around real usage patterns</p></div>
+      </div>
+    </div>
+
     <div class="border-t border-[#1C1F3B]/8 pt-8">
-      <p class="text-[#555870] text-xs font-semibold tracking-wide uppercase mb-5">Weitere Projekte</p>
+      <p class="text-[#555870] text-xs font-semibold tracking-wide uppercase mb-5">More Projects</p>
       <div class="grid grid-cols-2 gap-4">
         <a href="buddy-first.html" class="bg-white border border-[#1C1F3B]/8 rounded-xl p-4 flex items-center gap-3 hover:shadow-md transition-all">
-          <img src="buddy-first-01.jpg" class="w-16 h-12 object-cover rounded-lg flex-shrink-0"/>
-          <div><p class="text-[#5580ED] text-xs uppercase tracking-wide font-medium mb-1">Feature Design · UX/UI</p><p class="text-[#1C1F3B] text-sm" style="font-family:'Newsreader',serif;">TITEL</p></div>
+          <img src="bf_midfi-start_scrolling.png" class="w-16 h-12 object-cover rounded-lg flex-shrink-0"/>
+          <div><p class="text-[#5580ED] text-xs uppercase tracking-wide font-medium mb-1">UX Research · Product Design</p><p class="text-[#1C1F3B] text-sm" style="font-family:'Newsreader',serif;">Buddy First</p></div>
         </a>
         <a href="statista.html" class="bg-white border border-[#1C1F3B]/8 rounded-xl p-4 flex items-center gap-3 hover:shadow-md transition-all">
-          <img src="statista-01.jpg" class="w-16 h-12 object-cover rounded-lg flex-shrink-0"/>
-          <div><p class="text-[#5580ED] text-xs uppercase tracking-wide font-medium mb-1">Feature Design · UX/UI</p><p class="text-[#1C1F3B] text-sm" style="font-family:'Newsreader',serif;">TITEL</p></div>
+          <img src="statista_1.jpg" class="w-16 h-12 object-cover rounded-lg flex-shrink-0"/>
+          <div><p class="text-[#5580ED] text-xs uppercase tracking-wide font-medium mb-1">Infographic &amp; Presentation Design</p><p class="text-[#1C1F3B] text-sm" style="font-family:'Newsreader',serif;">Statista</p></div>
         </a>
       </div>
     </div>
 
   </div>
 
-  <footer class="bg-[#1C1F3B] border-t border-[#FAF5E8]/10 py-6 text-center text-[#FAF5E8]/30 text-xs">
-    © 2025 Lisa Schubert · UX Designerin &amp; Illustratorin · München
+  <footer style="background:#1C1F3B; width:100%; padding:1.5rem 0; text-align:center; color:rgba(250,245,232,0.3); font-size:0.75rem;">
+    © 2025 Lisa Schubert · UX Designer &amp; Illustrator · Munich
   </footer>
 
 </body>

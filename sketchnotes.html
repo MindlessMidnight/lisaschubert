@@ -5,9 +5,18 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>Sketchnotes – Lisa Schubert</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet"/>
   <style>
     body { font-family: 'DM Sans', sans-serif; background-color: #FAF5E8; }
+    .section-label { font-size:0.7rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#5580ED; margin-bottom:0.75rem; }
+    .section-h2 { font-family:'Newsreader',serif; font-weight:500; font-size:1.6rem; line-height:1.25; color:#1C1F3B; margin-bottom:0.75rem; }
+    .section-body { font-size:1rem; color:#555870; font-weight:300; line-height:1.6; }
+    .header-meta { display:flex; gap:0; border-top:1px solid rgba(28,31,59,0.08); padding-top:1.25rem; flex-wrap:wrap; }
+    .header-meta-item { padding-right:2.5rem; border-right:1px solid rgba(28,31,59,0.07); margin-right:2.5rem; }
+    .header-meta-item:last-child { padding-right:0; border-right:none; margin-right:0; }
+    .bullet-list { display:flex; flex-direction:column; gap:0.5rem; margin-top:0.75rem; }
+    .bullet-row { display:flex; gap:0.65rem; align-items:start; }
+    .section { margin-bottom:3.5rem; }
   </style>
 </head>
 <body class="text-[#1C1F3B] min-h-screen overflow-x-hidden">
@@ -21,70 +30,83 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <div class="max-w-4xl mx-auto px-10 pt-36 pb-12">
-    <a href="index.html" class="inline-flex items-center gap-2 text-[#555870] text-sm mb-8 hover:text-[#1C1F3B] transition-colors">← Alle Projekte</a>
+  <div class="max-w-4xl mx-auto px-10 pt-36 pb-10">
+    <a href="index.html" class="inline-flex items-center gap-2 text-[#555870] text-sm mb-8 hover:text-[#1C1F3B] transition-colors">← All Projects</a>
     <p class="text-[#5580ED] text-sm font-semibold tracking-wide uppercase mb-3">Visual Sketchnotes</p>
-    <h1 class="text-[#1C1F3B] mb-6" style="font-family:'Newsreader',serif; font-weight:500; font-size:clamp(2rem,4vw,3.5rem); line-height:1.1;">Visual Sketchnotes: Live-Visualisierung</h1>
-    <p class="text-[#555870] text-base leading-relaxed max-w-xl mb-8" style="font-weight:300;">Inhalte live während Vorträgen oder Workshops festhalten: als Mischung aus Zeichnungen, Symbolen und kurzen Texten.</p>
-    <div class="flex gap-8 border-t border-[#1C1F3B]/8 pt-6">
-      <div><p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Kontext</p><p class="text-sm text-[#555870]">Ongoing</p></div>
-      <div><p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Jahr</p><p class="text-sm text-[#555870]">2022–heute</p></div>
-      <div><p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Rolle</p><p class="text-sm text-[#555870]">Illustratorin</p></div>
-      <div><p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Tools</p><p class="text-sm text-[#555870]">Procreate, Marker</p></div>
+    <h1 class="text-[#1C1F3B] mb-6" style="font-family:'Newsreader',serif; font-weight:500; font-size:clamp(2rem,4vw,3.5rem); line-height:1.1;">Visual Sketchnotes: Live Visualisation</h1>
+    <p class="section-body mb-8">Capturing content live during talks and workshops as a mix of drawings, symbols, and short texts that make ideas visible at a glance.</p>
+    <div class="header-meta">
+      <div class="header-meta-item">
+        <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Context</p>
+        <p class="text-sm text-[#555870]">Ongoing</p>
+      </div>
+      <div class="header-meta-item">
+        <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Years</p>
+        <p class="text-sm text-[#555870]">2022 – present</p>
+      </div>
+      <div class="header-meta-item">
+        <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Role</p>
+        <p class="text-sm text-[#555870]">Illustrator</p>
+      </div>
+      <div class="header-meta-item">
+        <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Tools</p>
+        <p class="text-sm text-[#555870]">Procreate, Markers</p>
+      </div>
     </div>
   </div>
 
-  <!-- Content -->
   <div class="max-w-4xl mx-auto px-10 pb-24">
 
-    <!-- Main image -->
-    <div class="rounded-xl overflow-hidden mb-8">
-      <img src="sketchnotes-01.jpg" alt="Projekt" class="w-full h-auto"/>
+    <div class="rounded-xl overflow-hidden mb-10">
+      <img src="sn_stoicism.jpg" alt="Sketchnote: Stoicism" class="w-full h-auto"/>
     </div>
 
-    <!-- Text block -->
-    <div class="mb-12">
-      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-3">Was sind Visual Sketchnotes</p>
-      <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">Ideen sichtbar machen</h2>
-      <p class="text-[#555870] text-base leading-relaxed" style="font-weight:300;">Sketchnoting ist die Kunst, Informationen gleichzeitig zu hören, zu verarbeiten und visuell festzuhalten. Das Ergebnis ist kein perfektes Design: sondern ein lebendiges Dokument das den Kern einer Idee sofort erfassbar macht.</p>
-    </div>
-
-    <!-- Image grid -->
-    <div class="grid grid-cols-2 gap-4 mb-12">
-      <img src="sketchnotes-02.jpg" alt="" class="rounded-xl w-full h-auto"/>
-      <img src="sketchnotes-03.jpg" alt="" class="rounded-xl w-full h-auto"/>
-    </div>
-
-    <!-- Learnings -->
-    <div style="background:#FEF9C3; border:1px solid #5580ED; border-left:4px solid #5580ED; border-radius:0 12px 12px 0; padding:1.5rem; margin-bottom:2rem;">
-      <p style="font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#5580ED; margin:0 0 1rem;">Was ich dabei gelernt habe</p>
-      <div class="space-y-3">
-        <div class="flex gap-3"><span class="text-[#5580ED]">✦</span><p class="text-[#1C1F3B] text-sm" style="font-weight:300;">Wichtige Punkte schnell erfassen und das Wesentliche herausfiltern</p></div>
-        <div class="flex gap-3"><span class="text-[#5580ED]">✦</span><p class="text-[#1C1F3B] text-sm" style="font-weight:300;">Abstrakte Ideen visuell greifbar machen</p></div>
-        <div class="flex gap-3"><span class="text-[#5580ED]">✦</span><p class="text-[#1C1F3B] text-sm" style="font-weight:300;">Themen prägnant zusammenfassen und klar strukturieren</p></div>
+    <div class="section">
+      <p class="section-label">What are Visual Sketchnotes?</p>
+      <h2 class="section-h2">Making Ideas Visible</h2>
+      <p class="section-body mb-4">Sketchnoting means listening, processing, and visually capturing information simultaneously in real time. The result is not a polished design but a living document that makes the core of an idea graspable instantly.</p>
+      <div class="bullet-list">
+        <div class="bullet-row"><span class="text-[#5580ED]">✦</span><p class="section-body">Identify the 2 or 3 ideas worth anchoring</p></div>
+        <div class="bullet-row"><span class="text-[#5580ED]">✦</span><p class="section-body">Find a visual metaphor that carries the meaning</p></div>
+        <div class="bullet-row"><span class="text-[#5580ED]">✦</span><p class="section-body">Build up shorthand that makes the whole page readable in seconds</p></div>
       </div>
     </div>
 
-    <!-- Next projects -->
+    <div class="rounded-xl overflow-hidden mb-10">
+      <img src="sn_happylife.jpg" alt="Sketchnote: Secrets to a Happy Life" class="w-full h-auto"/>
+    </div>
+
+    <div class="rounded-xl overflow-hidden mb-10">
+      <img src="sn_anxious.jpg" alt="Sketchnote: Why You Feel Anxious Socializing" class="w-full h-auto"/>
+    </div>
+
+    <div style="background:#FEF9C3; border:1px solid #5580ED; border-left:4px solid #5580ED; border-radius:0 12px 12px 0; padding:1.5rem; margin-bottom:3rem;">
+      <p style="font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#5580ED; margin:0 0 1rem;">What I learned</p>
+      <div class="bullet-list">
+        <div class="bullet-row"><span class="text-[#5580ED]">✦</span><p class="text-[#1C1F3B] text-sm" style="font-weight:300;"><strong>Rapid filtering:</strong> capturing key points quickly and deciding what matters in the moment</p></div>
+        <div class="bullet-row"><span class="text-[#5580ED]">✦</span><p class="text-[#1C1F3B] text-sm" style="font-weight:300;"><strong>Visual translation:</strong> turning abstract ideas into concrete, readable images</p></div>
+        <div class="bullet-row"><span class="text-[#5580ED]">✦</span><p class="text-[#1C1F3B] text-sm" style="font-weight:300;"><strong>Structure under pressure:</strong> condensing dense content into something clear at a glance</p></div>
+      </div>
+    </div>
+
     <div class="border-t border-[#1C1F3B]/8 pt-8">
-      <p class="text-[#555870] text-xs font-semibold tracking-wide uppercase mb-5">Weitere Projekte</p>
+      <p class="text-[#555870] text-xs font-semibold tracking-wide uppercase mb-5">More Projects</p>
       <div class="grid grid-cols-2 gap-4">
         <a href="wim-frida.html" class="bg-white border border-[#1C1F3B]/8 rounded-xl p-4 flex items-center gap-3 hover:shadow-md transition-all">
-          <img src="wim-frida-01.jpg" class="w-16 h-12 object-cover rounded-lg flex-shrink-0"/>
-          <div><p class="text-[#5580ED] text-xs uppercase tracking-wide font-medium mb-1">Visual Sketchnotes</p><p class="text-[#1C1F3B] text-sm" style="font-family:'Newsreader',serif;">TITEL</p></div>
+          <img src="wf_lllu.jpg" class="w-16 h-12 object-cover rounded-lg flex-shrink-0"/>
+          <div><p class="text-[#5580ED] text-xs uppercase tracking-wide font-medium mb-1">Illustration · Children's Book</p><p class="text-[#1C1F3B] text-sm" style="font-family:'Newsreader',serif;">Wim &amp; Frida Räbeliechtli</p></div>
         </a>
         <a href="statista.html" class="bg-white border border-[#1C1F3B]/8 rounded-xl p-4 flex items-center gap-3 hover:shadow-md transition-all">
-          <img src="statista-01.jpg" class="w-16 h-12 object-cover rounded-lg flex-shrink-0"/>
-          <div><p class="text-[#5580ED] text-xs uppercase tracking-wide font-medium mb-1">Visual Sketchnotes</p><p class="text-[#1C1F3B] text-sm" style="font-family:'Newsreader',serif;">TITEL</p></div>
+          <img src="statista_1.jpg" class="w-16 h-12 object-cover rounded-lg flex-shrink-0"/>
+          <div><p class="text-[#5580ED] text-xs uppercase tracking-wide font-medium mb-1">Infographic &amp; Presentation Design</p><p class="text-[#1C1F3B] text-sm" style="font-family:'Newsreader',serif;">Statista</p></div>
         </a>
       </div>
     </div>
 
   </div>
 
-  <footer class="bg-[#1C1F3B] border-t border-[#FAF5E8]/10 py-6 text-center text-[#FAF5E8]/30 text-xs">
-    © 2025 Lisa Schubert · UX Designerin &amp; Illustratorin · München
+  <footer style="background:#1C1F3B; width:100%; padding:1.5rem 0; text-align:center; color:rgba(250,245,232,0.3); font-size:0.75rem;">
+    © 2025 Lisa Schubert · UX Designer &amp; Illustrator · Munich
   </footer>
 
 </body>
